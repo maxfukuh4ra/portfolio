@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Link className={styles.title} to="/" onClick={() => setMenuOpen(false)}>
+      <Link className={styles.title} to="/portfolio/" onClick={() => setMenuOpen(false)}>
         Max Fukuhara
       </Link>
       <div className={styles.menu}>
@@ -27,7 +27,7 @@ const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link to="/portfolio/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
           <li>
             <Link to="/experience" onClick={() => setMenuOpen(false)}>Experience</Link>
