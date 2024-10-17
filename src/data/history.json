@@ -4,7 +4,7 @@
       "organisation": "Daily Bruin",
       "startDate": "Oct, 2024",
       "endDate": "Present",
-      "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+      "experiences": [],
       "imageSrc": "work/db.png"
     },
     {
@@ -12,7 +12,7 @@
       "organisation": "UCLA Student Media",
       "startDate": "Oct, 2024",
       "endDate": "Present",
-      "experiences": ["Worked on Windows 11", "Designed the control panel"],
+      "experiences": [],
       "imageSrc": "work/studentmedia.png"
     },
     {
@@ -20,9 +20,8 @@
       "organisation": "Bruin Sports Analytics - Tennis",
       "startDate": "Oct, 2024",
       "endDate": "Present",
-      "experiences": [
-        "Worked on component library",
-        "Helped create UI components"
+      "experiences": ["Developed Filterable Match Viewer web app for UCLA D1 Mens and Womens Tennis teams using Next.js and Firebase", 
+      "Maintaining internal tagging tool for delivering match report summaries, supporting 30+ student athletes and coaches"
       ],
       "imageSrc": "work/bsa.png"
     },
@@ -32,8 +31,8 @@
         "startDate": "Aug, 2024",
         "endDate": "Oct, 2024",
         "experiences": [
-          "Worked on component library",
-          "Helped create UI components"
+         "Generated a college counselor chatbot using Botpress that provides general advice and edits on college essay writing",
+         "Programmed a Python automated cold outreach system increasing efficiency by 80%: utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails"
         ],
         "imageSrc": "work/tf.png"
       }
