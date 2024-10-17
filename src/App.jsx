@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route 
-              path="/" 
+              path="/portfolio" 
               element={
                 <>
                   <Hero />
