@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Hero.module.css";
+import styles from "./hero.module.css";
 import { getImageUrl } from "../../utils";
 import Typed  from "react-typed";
 import Spline from "./spline";
