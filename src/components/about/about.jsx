@@ -7,7 +7,7 @@ import { IoCameraSharp } from "react-icons/io5";
 import { PiSoccerBallFill } from "react-icons/pi";
 import { BsServer } from "react-icons/bs";
 
-export const About = () => {
+const About = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
@@ -53,3 +53,5 @@ export const About = () => {
     </section>
   );
 };
+
+export default About;

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
+      <Link className={styles.title} to="/" onClick={() => setMenuOpen(false)}>
         Max Fukuhara
-      </a>
+      </Link>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
@@ -27,25 +27,27 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="#home">Home</a>
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <Link to="/experience" onClick={() => setMenuOpen(false)}>Experience</Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
           </li>
           <li>
-            <a href="#design">Design</a>
+            <Link to="/design" onClick={() => setMenuOpen(false)}>Design</Link>
           </li>
           <li>
-            <a href="#personal">Personal</a>
+            <Link to="/personal" onClick={() => setMenuOpen(false)}>Personal</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </li>
         </ul>
       </div>
     </nav>
   );
 };
+
+export default Navbar;
