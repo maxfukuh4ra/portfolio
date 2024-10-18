@@ -35,6 +35,17 @@
          "Programmed a Python automated cold outreach system increasing efficiency by 80%: utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails"
         ],
         "imageSrc": "work/tf.png"
+    },
+    {
+      "role": "Multimedia Producer",
+      "organisation": "Samahang Modern",
+      "startDate": "Jan, 2023",
+      "endDate": "Jun, 2024",
+      "experiences": [
+        "Increased Instagram followers to 2200+ with professional quality video filming & editing garnering 440,000+ views",
+        "Designed flyers, team gear, utilizing Adobe Illustrator and Photoshop"
+      ],
+      "imageSrc": "work/sama.png"
       }
     
   ]
