@@ -27,7 +27,6 @@
   /* background: #19376d; */
   background: rgba(51, 73, 101, 0.6);
   background: linear-gradient(90deg, rgba(51, 73, 101, 0.6) 0%, rgba(25, 55, 109, 0) 100%);
-  
   border-radius: 10px;
   padding: 24px;
 }
