@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link className={styles.title} to="/portfolio/" onClick={() => setMenuOpen(false)}>
-        Max Fukuhara
+        福原正義
       </Link>
       <div className={styles.menu}>
         <img

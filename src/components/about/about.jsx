@@ -9,12 +9,11 @@ import { BsServer } from "react-icons/bs";
 
 const About = () => {
   return (
-    <section className={styles.container} id="about">
+    <section className={styles.container}>
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
           src={getImageUrl("about/hero.png")}
-          alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
