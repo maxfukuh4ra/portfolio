@@ -75,7 +75,7 @@
   flex-direction: column;
   align-items: center;
   gap: 11px;
-  background: #1e3a5f;
+  background: rgba(51, 73, 101, 0.6);
   padding: 15px;
   border-radius: 10px;
   text-align: center;

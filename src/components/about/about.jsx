@@ -22,7 +22,7 @@ const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Full-Stack Developer</h3>
               <p>
-                I'm a full-stack developer with experience in building responsive
+                I'm an aspiring full-stack developer with experience in building responsive
                 and optimized sites both in the front and back-end. 
               </p>
             </div>
@@ -43,7 +43,7 @@ const About = () => {
               <h3>Athlete</h3>
               <p>
                 As a retired soccer player, karate kid, tennis enthusiast, and current competitive dancer, 
-                teamwork is the success to everything.
+                I believe teamwork is the success to everything.
               </p>
             </div>
           </li>
