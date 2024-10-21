@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import styles from "./App.module.css";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Experience from "./pages/experience/experience";
-import styles from "./App.module.css";
+import ProjectsPage from "./pages/projects/projects";
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
               } 
             />
           <Route path="/experience" element={<Experience />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
+          <Route path="/projects" element={<ProjectsPage />} />
           {/* <Route path="/design" element={<Design />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/contact" element={<Contact />} /> */}
