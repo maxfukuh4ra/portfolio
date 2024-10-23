@@ -22,17 +22,24 @@
     },
     {
         "title": "Reachify",
-        "imageSrc": "path_to_synoodle_image.png",
+        "imageSrc": "projects/reachify.png",
         "description": "Python automated cold outreach system for LinkedIn. Utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails.",
         "liveDemo": "",
         "github": "https://github.com/maxfukuh4ra/reachify"
     },
     {
         "title": "Mancala",
-        "imageSrc": "path_to_synoodle_image.png",
+        "imageSrc": "projects/mancala.png",
         "description": "Built an object-oriented C++ game utilizing binary search tree-based predictive AI to make best move possible against player.",
         "liveDemo": "",
         "github": "https://github.com/maxfukuh4ra/mancala"
-    }
+    },
+    {
+      "title": "Predicting DoorDash Deliveries",
+      "imageSrc": "projects/ddd.png",
+      "description": "From open-source Kaggle data-set, followed the DSLC to create a model using machine learning techniques such as linear regression to predict DoorDash deliveries.",
+      "liveDemo": "",
+      "github": "https://github.com/maxfukuh4ra/doordashdelivery"
+  }
 ]
   
