@@ -23,8 +23,8 @@ function App() {
                 </>
               } 
             />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/portfolio/experience" element={<Experience />} />
+          <Route path="/portfolio/projects" element={<ProjectsPage />} />
           {/* <Route path="/design" element={<Design />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/contact" element={<Contact />} /> */}

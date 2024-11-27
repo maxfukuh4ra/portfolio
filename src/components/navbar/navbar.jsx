@@ -30,19 +30,19 @@ const Navbar = () => {
             <Link to="/portfolio/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
           <li>
-            <Link to="/experience" onClick={() => setMenuOpen(false)}>Experience</Link>
+            <Link to="/portfolio/experience" onClick={() => setMenuOpen(false)}>Experience</Link>
           </li>
           <li>
-            <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
+            <Link to="/portfolio/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
           </li>
           <li>
-            <Link to="/design" onClick={() => setMenuOpen(false)}>Design</Link>
+            <Link to="/portfolio/design" onClick={() => setMenuOpen(false)}>Design</Link>
           </li>
           <li>
-            <Link to="/personal" onClick={() => setMenuOpen(false)}>Personal</Link>
+            <Link to="/portfolio/personal" onClick={() => setMenuOpen(false)}>Personal</Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+            <Link to="/portfolio/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </li>
         </ul>
       </div>
