@@ -7,6 +7,7 @@ import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Experience from "./pages/experience/experience";
 import ProjectsPage from "./pages/projects/projects";
+import Contact from "./pages/contact/contact";
 
 function App() {
   return (
@@ -25,9 +26,9 @@ function App() {
             />
           <Route path="/portfolio/experience" element={<Experience />} />
           <Route path="/portfolio/projects" element={<ProjectsPage />} />
-          {/* <Route path="/design" element={<Design />} />
-          <Route path="/personal" element={<Personal />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/portfolio/design" element={<Design />} /> */}
+          {/* <Route path="/portfolio/personal" element={<Personal />} /> */}
+          <Route path="/portfolio/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
