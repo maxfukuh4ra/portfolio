@@ -8,6 +8,7 @@ import About from "./components/about/about";
 import Experience from "./pages/experience/experience";
 import ProjectsPage from "./pages/projects/projects";
 import Contact from "./pages/contact/contact";
+import Footer from "./components/footer/footer"; // Corrected path
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           {/* <Route path="/portfolio/personal" element={<Personal />} /> */}
           <Route path="/portfolio/contact" element={<Contact />} />
         </Routes>
+        <Footer /> {/* Moved Footer inside the div to maintain proper structure */}
       </div>
     </Router>
   );
