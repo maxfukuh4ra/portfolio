@@ -22,13 +22,13 @@ const Personal = () => {
       title: "Board Sports",
       description: "Surf in the summer, shred in the winter",
       icon: "🏂",
-      route: "/portfolio/personal/board-sports", 
+      route: "/portfolio/personal/board", 
     },
     {
       title: "Side Hustles",
       description: "Some random cool things I've done on the side",
       icon: "💸",
-      route: "/portfolio/personal/side-hustles",
+      route: "/portfolio/personal/side",
     },
   ];
 
