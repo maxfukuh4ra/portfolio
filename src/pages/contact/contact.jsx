@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -12,18 +10,18 @@ const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
+          <img src={getImageUrl("contact/gmail.png")} alt="Email icon" />
           <a href="mailto:maxfuku04@g.ucla.edu">maxfuku04@g.ucla.edu</a>
         </li>
         <li className={styles.link}>
           <img
-            src={getImageUrl("contact/linkedinIcon.png")}
+            src={getImageUrl("contact/linkedin.png")}
             alt="LinkedIn icon"
           />
           <a href="https://www.linkedin.com/in/max-fukuhara/">https://www.linkedin.com/in/max-fukuhara/</a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
+          <img src={getImageUrl("contact/github.png")} alt="Github icon" />
           <a href="https://github.com/maxfukuh4ra">https://github.com/maxfukuh4ra</a>
         </li>
       </ul>

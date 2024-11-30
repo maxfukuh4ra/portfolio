@@ -1,6 +1,4 @@
-import React from "react";
 import styles from "./hero.module.css";
-import { getImageUrl } from "../../utils";
 import Typed  from "react-typed";
 import Spline from "./spline";
 
@@ -12,8 +10,9 @@ const Hero = () => {
         <Typed
           strings={[
             "CS student at UCLA",
-            "aspiring software developer",
+            "aspiring software engineer",
             "aspiring product manager",
+            "aspiring tech consultant",
             "aspiring designer",
             "retired soccer player",
             "average tennis player",

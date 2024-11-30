@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import styles from "./App.module.css";
@@ -8,7 +7,7 @@ import About from "./components/about/about";
 import Experience from "./pages/experience/experience";
 import ProjectsPage from "./pages/projects/projects";
 import Contact from "./pages/contact/contact";
-import Footer from "./components/footer/footer"; // Corrected path
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
