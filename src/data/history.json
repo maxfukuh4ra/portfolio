@@ -20,9 +20,7 @@
       "organisation": "Bruin Sports Analytics - Tennis",
       "startDate": "Oct, 2024",
       "endDate": "Present",
-      "experiences": ["Developed Filterable Match Viewer web app for UCLA D1 Mens and Womens Tennis teams using Next.js and Firebase", 
-      "Maintaining internal tagging tool for delivering match report summaries, supporting 30+ student athletes and coaches"
-      ],
+      "experiences": [],
       "imageSrc": "work/bsa.png"
     },
     {
@@ -30,10 +28,7 @@
         "organisation": "Taskformer",
         "startDate": "Aug, 2024",
         "endDate": "Oct, 2024",
-        "experiences": [
-         "Generated a college counselor chatbot using Botpress that provides general advice and edits on college essay writing",
-         "Programmed a Python automated cold outreach system increasing efficiency by 80%: utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails"
-        ],
+        "experiences": [],
         "imageSrc": "work/tf.png"
     },
     {
@@ -41,10 +36,7 @@
       "organisation": "Samahang Modern",
       "startDate": "Jan, 2023",
       "endDate": "Jun, 2024",
-      "experiences": [
-        "Increased Instagram followers to 2200+ with professional quality video filming & editing garnering 440,000+ views",
-        "Designed flyers, team gear, utilizing Adobe Illustrator and Photoshop"
-      ],
+      "experiences": [],
       "imageSrc": "work/sama.png"
       }
     
