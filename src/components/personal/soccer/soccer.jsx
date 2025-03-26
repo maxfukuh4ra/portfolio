@@ -53,9 +53,9 @@ const Soccer = () => {
       <div className={styles.hero}>
         <h1 className={styles.title}>Soccer Highlights</h1>
         <p className={styles.subtitle}>
-          As someone who only started club soccer in 2018, I've come a long way in a short time.Climbing up the top rank
+          As someone who only started club soccer in 2018, climbing up to the top rank
           in the US Youth Soccer pyramid was a challenge, but I'm proud of what I've accomplished. Here are some of my
-          highlights from my so-called prime:
+          highlights from my prime:
         </p>
       </div>
 
