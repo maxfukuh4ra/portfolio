@@ -1,41 +1,49 @@
 [
     {
-      "role": "Software Engineer Intern",
-      "organisation": "Daily Bruin",
-      "startDate": "Oct, 2024",
-      "endDate": "Present",
+      "role": "Cybersecurity Engineering Consultant Intern",
+      "organisation": "EY",
+      "startDate": "Jun. 2025",
+      "endDate": "Aug. 2025",
       "experiences": [],
-      "imageSrc": "work/db.png"
+      "imageSrc": "work/ey.png"
     },
     {
-      "role": "DevOps Engineering Intern",
+      "role": "Software Engineering Intern",
       "organisation": "UCLA Student Media",
-      "startDate": "Oct, 2024",
+      "startDate": "Oct. 2024",
       "endDate": "Present",
       "experiences": [],
       "imageSrc": "work/studentmedia.png"
     },
     {
-      "role": "Software Developer",
+      "role": "Software Engineer",
       "organisation": "Bruin Sports Analytics - Tennis",
-      "startDate": "Oct, 2024",
+      "startDate": "Oct. 2024",
       "endDate": "Present",
       "experiences": [],
       "imageSrc": "work/bsa.png"
     },
     {
-        "role": "Software Developer Intern",
+      "role": "Software Engineer Intern",
+      "organisation": "Daily Bruin",
+      "startDate": "Oct. 2024",
+      "endDate": "Mar. 2025",
+      "experiences": [],
+      "imageSrc": "work/db.png"
+    },
+    {
+        "role": "Software Engineer Intern",
         "organisation": "Taskformer",
-        "startDate": "Aug, 2024",
-        "endDate": "Oct, 2024",
+        "startDate": "Aug. 2024",
+        "endDate": "Oct. 2024",
         "experiences": [],
         "imageSrc": "work/tf.png"
     },
     {
       "role": "Multimedia Producer",
       "organisation": "Samahang Modern",
-      "startDate": "Jan, 2023",
-      "endDate": "Jun, 2024",
+      "startDate": "Jan. 2023",
+      "endDate": "Jun. 2024",
       "experiences": [],
       "imageSrc": "work/sama.png"
       }

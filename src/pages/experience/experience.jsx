@@ -21,7 +21,7 @@ const Experience = () => {
                   className={styles.historyItemImage}
                 />
                 <div>
-                  <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                  <h3>{`${historyItem.role} @ ${historyItem.organisation}`}</h3>
                   <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
                 </div>
               </div>
