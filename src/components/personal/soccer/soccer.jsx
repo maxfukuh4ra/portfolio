@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Soccer.module.css";
+import { getImageUrl } from "../../../utils";
 
 const Soccer = () => {
   const highlights = [
@@ -27,23 +28,23 @@ const Soccer = () => {
   const progression = [
     {
       title: "National Premier Leagues",
-      imgSrc: "../assets/soccer/npl.avif",
+      imgSrc: getImageUrl("soccer/npl.avif"),
     },
     {
-        title: "High School Varsity",
-        imgSrc: "../assets/soccer/beckman.png",
+      title: "High School Varsity",
+      imgSrc: getImageUrl("soccer/beckman.png"),
     },
     {
-        title: "USSDA",
-        imgSrc: "../assets/soccer/da.png",
+      title: "USSDA",
+      imgSrc: getImageUrl("soccer/da.png"),
     },
     {
-        title: "ECNL",
-        imgSrc: "../assets/soccer/ecnl.png",
+      title: "ECNL",
+      imgSrc: getImageUrl("soccer/ecnl.png"),
     },
     {
-        title: "MLS NEXT",
-        imgSrc: "../assets/soccer/mlsnext.png",
+      title: "MLS NEXT",
+      imgSrc: getImageUrl("soccer/mlsnext.png"),
     },
   ];
 
