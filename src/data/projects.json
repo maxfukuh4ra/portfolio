@@ -1,5 +1,12 @@
 [
     {
+      "title": "PillPal",
+      "imageSrc": "projects/pillpal.png",
+      "description": "Full-stack mobile app that sends geolocation and time-based notifications to remind users to take their medications, track their medication intake, monitor adherence trends, and visualize health data.",
+      "liveDemo": "",
+      "github": "https://github.com/maxfukuh4ra/pillpal"
+    },
+    {
       "title": "FitFueler",
       "imageSrc": "projects/fitfueler.png",
       "description": "Full-stack mobile app allowing users to customize their diet plan/restriction and log their meal data. AI model generates personalized meal plans tailored to taste preference and user fitness goal",
@@ -40,6 +47,6 @@
       "description": "From open-source Kaggle data-set, followed the DSLC to create a model using machine learning techniques such as linear regression to predict DoorDash deliveries.",
       "liveDemo": "",
       "github": "https://github.com/maxfukuh4ra/doordashdelivery"
-  }
+    }
 ]
   
