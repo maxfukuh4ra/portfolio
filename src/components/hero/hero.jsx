@@ -1,12 +1,19 @@
 import styles from "./hero.module.css";
-import Typed  from "react-typed";
-import Spline from "./spline";
+import Typed from "react-typed";
+import { getImageUrl } from "../../utils";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
+
+        <div className={styles.profileWrapper}>
+          <img src={getImageUrl("about/headshot.png")} alt="Profile" className={styles.profilepic} />
+          <span className={styles.waveEmoji}>👋</span>
+        </div>
+
         <h1 className={styles.title}>Hi, I'm Max Fukuhara</h1>
+
         <Typed
           strings={[
             "CS student at UCLA",
@@ -26,15 +33,12 @@ const Hero = () => {
           loop
           className={styles.description}
         />
+
         <div className={styles.buttons}>
-          <a href="/portfolio/contact" className={styles.contactBtn}>
-            Contact Me
-          </a>
+          <a href="/portfolio/contact" className={styles.contactBtn}>Contact Me</a>
           <p className={styles.status}> ◆ Available for Work</p>
         </div>
-      </div>
-      <div className={styles.splineObject}>
-      <Spline />
+
       </div>
     </section>
   );
