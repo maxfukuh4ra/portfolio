@@ -13,13 +13,11 @@ const Hero = () => {
             "aspiring software engineer",
             "aspiring product manager",
             "aspiring tech consultant",
-            "aspiring designer",
             "retired soccer player",
             "average tennis player",
             "surfer and snowboarder",
             "decent dancer",
             "somewhat consistent gym rat",
-            "not so decent driver",
             "big foodie",
             "dog lover",
           ]}
@@ -28,15 +26,16 @@ const Hero = () => {
           loop
           className={styles.description}
         />
-        <a href="mailto:maxfuku04@g.ucla.edu" className={styles.contactBtn}>
-          Contact Me
-        </a>
+        <div className={styles.buttons}>
+          <a href="/portfolio/contact" className={styles.contactBtn}>
+            Contact Me
+          </a>
+          <p className={styles.status}> ◆ Available for Work</p>
+        </div>
       </div>
       <div className={styles.splineObject}>
       <Spline />
       </div>
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
     </section>
   );
 };

@@ -16,19 +16,19 @@ import Dance from "./components/personal/dance/dance";
 import Side from "./components/personal/side/side";
 // import Board from "./components/personal/board/board";
 
-import "./transitions.css"; // Import the fade transition CSS
+import "./transitions.css"; 
 
 function App() {
-  const location = useLocation(); // Get the current location for transition
+  const location = useLocation(); 
 
   return (
     <div className={styles.App}>
       <Navbar />
       <TransitionGroup>
         <CSSTransition
-          key={location.pathname} // Unique key for each page
-          timeout={300} // Animation duration in milliseconds
-          classNames="fade" // Matches the CSS class prefix
+          key={location.pathname} 
+          timeout={300} 
+          classNames="fade" 
         >
           <Routes location={location}>
             <Route
