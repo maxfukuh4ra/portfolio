@@ -63,6 +63,15 @@
     "imageSrc": "work/sama.png"
   },
   {
+    "role": "Coordinator",
+    "organisation": "US Open",
+    "startDate": "Aug. 2023",
+    "endDate": "Sept. 2024",
+    "experiences": [],
+    "imageSrc": "work/usopen.svg"
+  },
+
+  {
     "role": "Product Management Intern",
     "organisation": "SkyDrive",
     "startDate": "Aug. 2023",
