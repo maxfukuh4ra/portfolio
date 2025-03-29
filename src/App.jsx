@@ -5,7 +5,6 @@ import styles from "./App.module.css";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import About from "./components/about/about";
-import Experience from "./pages/experience/experience";
 import ProjectsPage from "./pages/projects/projects";
 import Contact from "./pages/contact/contact";
 import Footer from "./components/footer/footer";
@@ -40,7 +39,6 @@ function App() {
                 </>
               }
             />
-            <Route path="/portfolio/experience" element={<Experience />} />
             <Route path="/portfolio/projects" element={<ProjectsPage />} />
             <Route path="/portfolio/personal" element={<Personal />} />
             <Route path="/portfolio/contact" element={<Contact />} />
