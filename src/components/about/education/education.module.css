@@ -98,3 +98,29 @@
   list-style: disc;
   margin-bottom: 0.3rem;
 }
+
+@media (max-width: 768px) {
+  .educationContent {
+    flex-direction: column;
+  }
+
+  .educationLeft,
+  .educationRight {
+    width: 100%;
+  }
+
+  .educationCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .educationLogo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .educationDetails {
+    text-align: left;
+  }
+}
+
