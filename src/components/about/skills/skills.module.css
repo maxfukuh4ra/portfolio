@@ -1,0 +1,52 @@
+@import "../../../vars.css";
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+/* Skills Grid */
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    justify-items: center;
+}
+
+/* Skill Card */
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+/* Skill Logo */
+.skillLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Skill Name */
+.skillName {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #222;
+}
