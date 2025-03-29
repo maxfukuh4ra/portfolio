@@ -36,8 +36,6 @@
   margin: 0;
 }
 
-/* ---------------------- */
-/* LINK BASE STYLE */
 .menuItems a {
   font-size: 1.25rem;
   font-weight: 500;
@@ -51,17 +49,15 @@
     font-weight 0.3s ease;
 }
 
-/* HOVER EFFECT */
+
 .menuItems a:hover {
   background: #d5d4d6;
 }
 
-/* ACTIVE PAGE */
 .menuItems a.active {
   font-weight: 700;
 }
 
-/* ---------------------- */
 
 .themeIcon {
   width: 1.5rem;
@@ -77,8 +73,7 @@
   height: 1.5rem;
 }
 
-/* ---------------------- */
-/* RESPONSIVE */
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;

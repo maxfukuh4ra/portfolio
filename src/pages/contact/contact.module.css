@@ -1,68 +1,77 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
-  margin-top: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
-}
-
-.text h2 {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
-
-.text p {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
-.links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 6rem;
+  gap: 2rem;
+}
+
+.text h2 {
+  font-size: 3.75rem;   
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 1.25rem;   
+  color: gray;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  gap: 26px;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 0.9375rem;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition: background 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.link:hover {
+  background: #d5d4d6; 
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-img {
-  width: 3vw;
-  height: auto;
+.link:hover a {
+  color: var(--color-text);
 }
 
+.link img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Responsive */
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column;
-    gap: 23px;
+    padding: 2rem;
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .text h2 {
+    font-size: 2.8125rem; 
   }
 
-  .links {
-    align-items: center;
+  .text p {
+    font-size: 1.125rem; 
+  }
+
+  .link a {
+    font-size: 1rem;   
   }
 }
