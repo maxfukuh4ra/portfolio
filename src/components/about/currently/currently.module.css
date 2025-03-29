@@ -1,6 +1,5 @@
 @import "../../../vars.css";
 
-/* Section */
 .currentlySection {
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
   margin-bottom: 2rem;
 }
 
-/* Grid Layout */
+
 .currentlyGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,14 +29,12 @@
   max-width: 1000px;
 }
 
-/* Left Side (Projects) */
 .currentProjects {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* Right Side (Courses) */
 .currentCourses {
   display: flex;
   flex-direction: column;
@@ -68,10 +65,9 @@
 .projectVideo {
   width: 100%;
   height: auto;
-  max-height: 400px; /* ✅ prevents vertical videos from being too tall */
+  max-height: 400px; 
   border-radius: 0.5rem;
-  object-fit: contain; /* ✅ keeps the entire video visible */
-}
+  object-fit: contain; 
 
 .projectTitle {
   font-size: 1.2rem;

@@ -26,7 +26,7 @@ const ExperienceTimeline = () => {
               <h3>{job.role}</h3>
               <p className={styles.orgName}>{job.organisation}</p>
 
-              {/* ✅ Work experience bullet list */}
+              {/* Work experience bullet list */}
               {job.experiences.length > 0 && (
                 <ul className={styles.experienceList}>
                   {job.experiences.map((point, idx) => (
