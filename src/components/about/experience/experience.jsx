@@ -13,13 +13,8 @@ const ExperienceTimeline = () => {
             key={index}
             className={`${styles.timelineItem} ${index % 2 === 0 ? styles.left : styles.right}`}
           >
-            {/* Dot */}
             <div className={styles.timelineDot}></div>
-
-            {/* Date */}
-            <p className={styles.timelineDate}>{job.startDate} - {job.endDate}</p>
-
-            {/* Card */}
+            <div className={styles.timelineDate}>{job.startDate} - {job.endDate}</div>
             <div className={styles.timelineContent}>
               <img
                 src={getImageUrl(job.imageSrc)}
@@ -28,10 +23,12 @@ const ExperienceTimeline = () => {
               />
               <h3>{job.role}</h3>
               <p className={styles.orgName}>{job.organisation}</p>
+
+              {/* ✅ Work experience bullet list */}
               {job.experiences.length > 0 && (
-                <ul>
-                  {job.experiences.map((exp, idx) => (
-                    <li key={idx}>{exp}</li>
+                <ul className={styles.experienceList}>
+                  {job.experiences.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
                 </ul>
               )}

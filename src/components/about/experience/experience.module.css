@@ -71,23 +71,21 @@
 
 .timelineContent {
     background: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 30rem;
+    max-width: 30rem;
 }
 
-/* LEFT aligned cards */
 .left .timelineContent {
-  margin-left: 30rem; /* pushes the card away from the timeline */
+  margin-left: 40rem; 
 }
 
-/* RIGHT aligned cards */
+
 .right .timelineContent {
-  margin-right: 30rem; /* pushes the card away from the timeline */
+  margin-right: 30rem; 
 }
-
-
 
 .left {
     flex-direction: row-reverse;
@@ -118,4 +116,16 @@ ul {
 li {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
+}
+
+.experienceList {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.experienceList li {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  list-style-type: disc;
+  line-height: 1.4;
 }
