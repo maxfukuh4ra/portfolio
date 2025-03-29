@@ -15,7 +15,7 @@
   },
   {
     "title": "UCLA D1 Tennis Filterable Data Match Viewer",
-    "imageSrc": "projects/BSA.png",
+    "imageSrc": "projects/bsa.png",
     "description": "Full-stack web app for custom tennis match playback, allowing coaches to easily filter and search points by attributes for film review.",
     "liveDemo": "https://match-viewing-dashboard.web.app/",
     "github": "https://github.com/awest25/Tennis-Video-Viewer"
