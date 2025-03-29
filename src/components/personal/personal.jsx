@@ -10,7 +10,7 @@ const Personal = () => {
       title: "Soccer",
       description: "My once super serious hobby",
       icon: "⚽",
-      route: "/portfolio/personal/soccer", 
+      route: "/portfolio/personal/soccer",
     },
     {
       title: "Dance",
@@ -22,7 +22,7 @@ const Personal = () => {
       title: "Board Sports",
       description: "Surf in the summer, shred in the winter",
       icon: "🏂",
-      route: "/portfolio/personal/board", 
+      route: "/portfolio/personal/board",
     },
     {
       title: "Side Hustles",
@@ -35,13 +35,15 @@ const Personal = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>About Me</h2>
-      <p className={styles.subtitle}>Click to see some of my favorite hobbies:</p>
+      <p className={styles.subtitle}>
+        Click to see some of my favorite hobbies:
+      </p>
       <div className={styles.cardContainer}>
         {hobbies.map((hobby, index) => (
           <div
             key={index}
             className={styles.card}
-            onClick={() => navigate(hobby.route)} 
+            onClick={() => navigate(hobby.route)}
           >
             <div className={styles.icon}>{hobby.icon}</div>
             <h3 className={styles.cardTitle}>{hobby.title}</h3>

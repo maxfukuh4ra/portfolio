@@ -6,9 +6,12 @@ const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-
         <div className={styles.profileWrapper}>
-          <img src={getImageUrl("about/headshot.png")} alt="Profile" className={styles.profilepic} />
+          <img
+            src={getImageUrl("about/headshot.png")}
+            alt="Profile"
+            className={styles.profilepic}
+          />
           <span className={styles.waveEmoji}>👋</span>
         </div>
 
@@ -35,10 +38,11 @@ const Hero = () => {
         />
 
         <div className={styles.buttons}>
-          <a href="/portfolio/contact" className={styles.contactBtn}>Contact Me</a>
+          <a href="/portfolio/contact" className={styles.contactBtn}>
+            Contact Me
+          </a>
           <p className={styles.status}> ◆ Available for Work</p>
         </div>
-
       </div>
     </section>
   );

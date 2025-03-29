@@ -1,26 +1,29 @@
 /* Initial state when entering */
 .fade-enter {
-    opacity: 0;
-    transform: translateY(10px); /* Optional slight slide */
-  }
-  
-  /* Active state during the entering animation */
-  .fade-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 600ms ease-in-out, transform 600ms ease-in-out; /* Increased duration */
-  }
-  
-  /* Initial state when exiting */
-  .fade-exit {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Active state during the exiting animation */
-  .fade-exit-active {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 600ms ease-in-out, transform 600ms ease-in-out; /* Increased duration */
-  }
-  
+  opacity: 0;
+  transform: translateY(10px); /* Optional slight slide */
+}
+
+/* Active state during the entering animation */
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 600ms ease-in-out,
+    transform 600ms ease-in-out; /* Increased duration */
+}
+
+/* Initial state when exiting */
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Active state during the exiting animation */
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 600ms ease-in-out,
+    transform 600ms ease-in-out; /* Increased duration */
+}

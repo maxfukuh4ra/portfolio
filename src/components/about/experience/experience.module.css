@@ -1,69 +1,110 @@
 @import "../../../vars.css";
 
 .experienceSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  position: relative;
+    position: relative;
+    margin: 2rem 0;
 }
 
 .timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #d0d0d0;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: #d0d0d0;
 }
 
 .timelineItem {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+    width: 100%;
 }
 
-.timelineItem::before {
-  content: "";
-  position: absolute;
-  left: 14px;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #4f46e5;
+.timelineDot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #4f46e5;
+    border-radius: 50%;
+    z-index: 2;
 }
+
+.timelineDate {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: gray;
+    white-space: nowrap;
+}
+
+
+.left .timelineDate {
+    right: calc(50% + 1rem); 
+    text-align: right;
+}
+
+.right .timelineDate {
+    left: calc(50% + 1rem); 
+    text-align: left;
+}
+
 
 .timelineContent {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  margin-left: 2rem;
-  width: 100%;
-  max-width: 40rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+
+.left {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.right {
+    flex-direction: row;
+    text-align: left;
 }
 
 .workLogo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
 }
 
 .orgName {
-  font-weight: 600;
+    font-weight: 600;
 }
 
-.date {
-  font-size: 0.9rem;
-  color: gray;
+ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+li {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
 }

@@ -5,8 +5,8 @@ import EducationSection from "./education/education";
 const About = () => {
   return (
     <section className={styles.aboutSection}>
-      <EducationSection /> 
-      <ExperienceTimeline /> 
+      <EducationSection />
+      <ExperienceTimeline />
     </section>
   );
 };

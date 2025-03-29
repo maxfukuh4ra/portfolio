@@ -1,54 +1,54 @@
 [
-    {
-      "title": "Python",
-      "imageSrc": "skills/python.png"
-    },
-    {
-      "title": "C++",
-      "imageSrc": "skills/c++.png"
-    },
-    {
-      "title": "Javascript",
-      "imageSrc": "skills/javascript.png"
-    },
-    {
-      "title": "HTML/CSS",
-      "imageSrc": "skills/css.png"
-    },
-    {
-      "title": "Bash",
-      "imageSrc": "skills/bash.png"
-    },
-    {
-      "title": "React",
-      "imageSrc": "skills/react.png"
-    },
-    {
-      "title": "Node.js",
-      "imageSrc": "skills/node.png"
-    },
-    {
-      "title": "Firebase",
-      "imageSrc": "skills/firebase.png"
-    },
-    {
-      "title": "AWS",
-      "imageSrc": "skills/aws.png"
-    },
-    {
-        "title": "MongoDB",
-        "imageSrc": "skills/mongodb.png"
-    },
-    {
-        "title": "Prem Pro",
-        "imageSrc": "skills/premierepro.png"
-    },
-    {
-        "title": "Illustrator",
-        "imageSrc": "skills/illustrator.png"
-    },
-    {
-        "title": "Figma",
-        "imageSrc": "skills/figma.png"
-    }
-  ]
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "C++",
+    "imageSrc": "skills/c++.png"
+  },
+  {
+    "title": "Javascript",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "title": "HTML/CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "Bash",
+    "imageSrc": "skills/bash.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Node.js",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/aws.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Prem Pro",
+    "imageSrc": "skills/premierepro.png"
+  },
+  {
+    "title": "Illustrator",
+    "imageSrc": "skills/illustrator.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  }
+]

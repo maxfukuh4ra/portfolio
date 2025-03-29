@@ -9,21 +9,32 @@ const ExperienceTimeline = () => {
       <h2 className={styles.sectionTitle}>My Experience</h2>
       <div className={styles.timeline}>
         {workData.map((job, index) => (
-          <div key={index} className={styles.timelineItem}>
+          <div
+            key={index}
+            className={`${styles.timelineItem} ${index % 2 === 0 ? styles.left : styles.right}`}
+          >
+            {/* Dot */}
+            <div className={styles.timelineDot}></div>
+
+            {/* Date */}
+            <p className={styles.timelineDate}>{job.startDate} - {job.endDate}</p>
+
+            {/* Card */}
             <div className={styles.timelineContent}>
-              <img src={getImageUrl(job.imageSrc)} alt={`${job.organisation} logo`} className={styles.workLogo} />
-              <div>
-                <h3>{job.role}</h3>
-                <p className={styles.orgName}>{job.organisation}</p>
-                <p className={styles.date}>{job.startDate} - {job.endDate}</p>
-                {job.experiences.length > 0 && (
-                  <ul>
-                    {job.experiences.map((exp, idx) => (
-                      <li key={idx}>{exp}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
+              <img
+                src={getImageUrl(job.imageSrc)}
+                alt={`${job.organisation} logo`}
+                className={styles.workLogo}
+              />
+              <h3>{job.role}</h3>
+              <p className={styles.orgName}>{job.organisation}</p>
+              {job.experiences.length > 0 && (
+                <ul>
+                  {job.experiences.map((exp, idx) => (
+                    <li key={idx}>{exp}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}

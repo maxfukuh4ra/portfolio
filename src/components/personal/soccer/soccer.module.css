@@ -1,140 +1,140 @@
 /* Main container */
 .container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Hero section */
-  .hero {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 0.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-  }
-  
-  /* Highlights Section */
-  .highlights {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .linkCard {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .linkCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .thumbnailLink {
-    text-decoration: none;
-  }
-  
-  .thumbnail {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
-  .linkTitle {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #0073e6;
-  }
-  
-  .linkDescription {
-    font-size: 1rem;
-    color: #555;
-    white-space: pre-line;
-  }
-  
-  /* Progression Section */
-  .progression {
-    margin-top: 2rem;
-  }
-  
-  .progressionHeading {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #222;
-    text-align: center;
-  }
-  
-  /* Horizontal row for progression */
-  .progressionRow {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.5rem; /* Space between items */
-  }
-  
-  .progressionItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .progressionImage {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .progressionTitle {
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 0.5rem;
-    color: #333;
-  }
-  
-  /* Arrow pointing to the right */
-  .arrow {
-    font-size: 2rem;
-    color: #0073e6;
-    align-self: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.linkCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.linkCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnailLink {
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.linkTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #0073e6;
+}
+
+.linkDescription {
+  font-size: 1rem;
+  color: #555;
+  white-space: pre-line;
+}
+
+/* Progression Section */
+.progression {
+  margin-top: 2rem;
+}
+
+.progressionHeading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Horizontal row for progression */
+.progressionRow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem; /* Space between items */
+}
+
+.progressionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressionImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progressionTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* Arrow pointing to the right */
+.arrow {
+  font-size: 2rem;
+  color: #0073e6;
+  align-self: center;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .progressionRow {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally on the screen */
-    }
-  
-    .arrow {
-      transform: rotate(90deg); /* Rotate arrows to point upwards */
-    }
+  .progressionRow {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally on the screen */
   }
-  
-  
+
+  .arrow {
+    transform: rotate(90deg); /* Rotate arrows to point upwards */
+  }
+}

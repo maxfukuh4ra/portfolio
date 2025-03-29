@@ -8,13 +8,15 @@ const Soccer = () => {
       title: "U19 MLS NEXT Highlights",
       videoId: "EEobwtfKncI",
       url: "https://youtu.be/EEobwtfKncI?si=E-ZUh6S2tA-kRr6f",
-      description: "MLS NEXT FLEX Southwest Conference Champion (Record: 9-1-1)",
+      description:
+        "MLS NEXT FLEX Southwest Conference Champion (Record: 9-1-1)",
     },
     {
       title: "U17 ECNL & High School Highlights",
       videoId: "dTtUdHJ5PsY",
       url: "https://youtu.be/dTtUdHJ5PsY?si=0RnCetoD7qfFUm5i",
-      description: "2021 ECNL National Playoff Semifinalist. \n Runner-up 2021 Surf Cup Best of the Best Division",
+      description:
+        "2021 ECNL National Playoff Semifinalist. \n Runner-up 2021 Surf Cup Best of the Best Division",
     },
     {
       title: "U16 Highlights",
@@ -54,9 +56,10 @@ const Soccer = () => {
       <div className={styles.hero}>
         <h1 className={styles.title}>Soccer Highlights</h1>
         <p className={styles.subtitle}>
-          As someone who only started club soccer in 2018, climbing up to the top rank
-          in the US Youth Soccer pyramid was a challenge, but I'm proud of what I've accomplished. Here are some of my
-          highlights from my prime:
+          As someone who only started club soccer in 2018, climbing up to the
+          top rank in the US Youth Soccer pyramid was a challenge, but I'm proud
+          of what I've accomplished. Here are some of my highlights from my
+          prime:
         </p>
       </div>
 

@@ -34,15 +34,15 @@
   object-position: 200% -60%;
   transform: scale(1.75);
   position: relative; /* make sure it's not on top by default */
-  z-index: 1;         /* optional */
+  z-index: 1; /* optional */
 }
 
 .waveEmoji {
-    position: absolute;
-    bottom: 0.2rem;
-    right: 0.2rem;
-    font-size: 1.5rem;
-    z-index: 2;        /* ensures it's on top */
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  font-size: 1.5rem;
+  z-index: 2; /* ensures it's on top */
 }
 
 .title {
@@ -92,7 +92,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4A7A51;
+  color: #4a7a51;
   margin-top: 1rem;
 }
 

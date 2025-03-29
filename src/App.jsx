@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import styles from "./App.module.css";
@@ -15,20 +20,16 @@ import Dance from "./components/personal/dance/dance";
 import Side from "./components/personal/side/side";
 // import Board from "./components/personal/board/board";
 
-import "./transitions.css"; 
+import "./transitions.css";
 
 function App() {
-  const location = useLocation(); 
+  const location = useLocation();
 
   return (
     <div className={styles.App}>
       <Navbar />
       <TransitionGroup>
-        <CSSTransition
-          key={location.pathname} 
-          timeout={300} 
-          classNames="fade" 
-        >
+        <CSSTransition key={location.pathname} timeout={300} classNames="fade">
           <Routes location={location}>
             <Route
               path="/portfolio"

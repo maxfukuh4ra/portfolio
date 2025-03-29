@@ -1,52 +1,51 @@
 [
-    {
-      "title": "PillPal",
-      "imageSrc": "projects/pillpal.png",
-      "description": "Full-stack mobile app that sends geolocation and time-based notifications to remind users to take their medications, track their medication intake, monitor adherence trends, and visualize health data.",
-      "liveDemo": "",
-      "github": "https://github.com/maxfukuh4ra/pillpal"
-    },
-    {
-      "title": "FitFueler",
-      "imageSrc": "projects/fitfueler.png",
-      "description": "Full-stack mobile app allowing users to customize their diet plan/restriction and log their meal data. AI model generates personalized meal plans tailored to taste preference and user fitness goal",
-      "liveDemo": "",
-      "github": "https://github.com/MattC04/FitFueler"
-    },
-    {
-        "title": "UCLA D1 Tennis Filterable Data Match Viewer",
-        "imageSrc": "projects/BSA.png",
-        "description": "Full-stack web app for custom tennis match playback, allowing coaches to easily filter and search points by attributes for film review.",
-        "liveDemo": "https://match-viewing-dashboard.web.app/",
-        "github": "https://github.com/awest25/Tennis-Video-Viewer"
-    },
-    {
-      "title": "Jam",
-      "imageSrc": "projects/jam.png",
-      "description": "Full-stack web app enabling users to search, follow users, and interact with their listening activity with likes. Integrated Spotify API to display users live-listening activity, weekly statistics, embedded song previews, and direct links.",
-      "liveDemo": "https://www.youtube.com/watch?v=FfWPnGlTNsg",
-      "github": "https://github.com/JensonW7/jam"
-    },
-    {
-        "title": "Reachify",
-        "imageSrc": "projects/reachify.png",
-        "description": "Python automated cold outreach system for LinkedIn. Utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails.",
-        "liveDemo": "",
-        "github": "https://github.com/maxfukuh4ra/reachify"
-    },
-    {
-        "title": "Mancala",
-        "imageSrc": "projects/mancala.png",
-        "description": "Built an object-oriented C++ game utilizing binary search tree-based predictive AI to make best move possible against player.",
-        "liveDemo": "",
-        "github": "https://github.com/maxfukuh4ra/mancala"
-    },
-    {
-      "title": "Predicting DoorDash Deliveries",
-      "imageSrc": "projects/ddd.png",
-      "description": "From open-source Kaggle data-set, followed the DSLC to create a model using machine learning techniques such as linear regression to predict DoorDash deliveries.",
-      "liveDemo": "",
-      "github": "https://github.com/maxfukuh4ra/doordashdelivery"
-    }
+  {
+    "title": "PillPal",
+    "imageSrc": "projects/pillpal.png",
+    "description": "Full-stack mobile app that sends geolocation and time-based notifications to remind users to take their medications, track their medication intake, monitor adherence trends, and visualize health data.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/pillpal"
+  },
+  {
+    "title": "FitFueler",
+    "imageSrc": "projects/fitfueler.png",
+    "description": "Full-stack mobile app allowing users to customize their diet plan/restriction and log their meal data. AI model generates personalized meal plans tailored to taste preference and user fitness goal",
+    "liveDemo": "",
+    "github": "https://github.com/MattC04/FitFueler"
+  },
+  {
+    "title": "UCLA D1 Tennis Filterable Data Match Viewer",
+    "imageSrc": "projects/BSA.png",
+    "description": "Full-stack web app for custom tennis match playback, allowing coaches to easily filter and search points by attributes for film review.",
+    "liveDemo": "https://match-viewing-dashboard.web.app/",
+    "github": "https://github.com/awest25/Tennis-Video-Viewer"
+  },
+  {
+    "title": "Jam",
+    "imageSrc": "projects/jam.png",
+    "description": "Full-stack web app enabling users to search, follow users, and interact with their listening activity with likes. Integrated Spotify API to display users live-listening activity, weekly statistics, embedded song previews, and direct links.",
+    "liveDemo": "https://www.youtube.com/watch?v=FfWPnGlTNsg",
+    "github": "https://github.com/JensonW7/jam"
+  },
+  {
+    "title": "Reachify",
+    "imageSrc": "projects/reachify.png",
+    "description": "Python automated cold outreach system for LinkedIn. Utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/reachify"
+  },
+  {
+    "title": "Mancala",
+    "imageSrc": "projects/mancala.png",
+    "description": "Built an object-oriented C++ game utilizing binary search tree-based predictive AI to make best move possible against player.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/mancala"
+  },
+  {
+    "title": "Predicting DoorDash Deliveries",
+    "imageSrc": "projects/ddd.png",
+    "description": "From open-source Kaggle data-set, followed the DSLC to create a model using machine learning techniques such as linear regression to predict DoorDash deliveries.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/doordashdelivery"
+  }
 ]
-  

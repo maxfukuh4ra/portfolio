@@ -1,78 +1,79 @@
 /* Main container */
 .danceContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 2rem;
-    background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Dance Card */
+.danceCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.danceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dance Image */
+.danceImage {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Titles and Description */
+.danceTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  color: #222;
+}
+
+.danceDescription {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 1rem 1rem;
+  white-space: pre-line;
+}
+
+/* Links */
+.danceLinks {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.danceLink {
+  text-decoration: none;
+  background-color: #0073e6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.danceLink:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .danceContainer {
+    flex-direction: column;
+    gap: 1.5rem;
   }
-  
-  /* Dance Card */
+
   .danceCard {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .danceCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Dance Image */
-  .danceImage {
     width: 100%;
-    border-radius: 10px 10px 0 0;
   }
-  
-  /* Titles and Description */
-  .danceTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 1rem 0 0.5rem;
-    color: #222;
-  }
-  
-  .danceDescription {
-    font-size: 1rem;
-    color: #555;
-    margin: 0 1rem 1rem;
-    white-space: pre-line;
-  }
-  
-  /* Links */
-  .danceLinks {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-  }
-  
-  .danceLink {
-    text-decoration: none;
-    background-color: #0073e6;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .danceLink:hover {
-    background-color: #005bb5;
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    .danceContainer {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-  
-    .danceCard {
-      width: 100%;
-    }
-  }
-  
+}

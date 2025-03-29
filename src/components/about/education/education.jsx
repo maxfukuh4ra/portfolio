@@ -2,12 +2,12 @@ import styles from "./education.module.css";
 import { getImageUrl } from "../../../utils";
 
 const EducationSection = () => {
-  return (    
+  return (
     <section className={styles.educationSection}>
       <h2 className={styles.sectionTitle}>My Education</h2>
       <div className={styles.educationCard}>
         <img
-          src={getImageUrl("about/ucla-logo.png")} 
+          src={getImageUrl("about/ucla-logo.png")}
           alt="UCLA Logo"
           className={styles.educationLogo}
         />
@@ -24,10 +24,10 @@ const EducationSection = () => {
           </ul>
         </div>
       </div>
-      
-        <div className={styles.educationCard}>
+
+      <div className={styles.educationCard}>
         <img
-          src={getImageUrl("soccer/beckman.png")} 
+          src={getImageUrl("soccer/beckman.png")}
           alt="Beckman Logo"
           className={styles.educationLogo}
         />

@@ -1,56 +1,55 @@
 [
-    {
-      "title": "Ultimate Brawl 2024",
-      "description": "5th place (best collegiate teams). \nInspired by hit horror movie, Us.",
-      "wideView": "https://youtu.be/5oUVEDeF10E",
-      "frontView": "https://youtu.be/0B0mshIfHI4",
-      "videoId": "0B0mshIfHI4"
-    },
-    {
-      "title": "Battle Royale 2024",
-      "description": "2nd Place. Curated new set in 2 weeks.",
-      "wideView": "https://youtu.be/D5UAkdQK2M8?si=rhHHShwXTECt_pMZ",
-      "frontView": "https://youtu.be/0miYY6U-Y1A?si=vLAemla5NEZEzVC0",
-      "videoId": "0miYY6U-Y1A"
-    },
-    {
-      "title": "Risk: Concept Video",
-      "description": "Edited by Max Fukuhara",
-      "wideView": "https://youtu.be/dBL_QFCMUUk?si=ZvWAUfDqPh4MKYKm",
-      "videoId": "dBL_QFCMUUk"
-    },
-    {
-      "title": "Samahang Modern Winter Workshop 2023",
-      "description": "Choreography by Max Fukuhara, Michael Co, Antonio Rivera",
-      "wideView": "https://youtu.be/PR2s4KF_IfE?si=0ZjMSqYbLOOsDm2w",
-      "videoId": "PR2s4KF_IfE"
-    },
-    {
-      "title": "MaxtOut 2023",
-      "description": "1st Place Major Crew. \nBest Storytelling Award.",
-      "wideView": "https://youtu.be/G9LJgvGelxQ",
-      "frontView": "https://youtu.be/P0qRZcFeWNM",
-      "videoId": "P0qRZcFeWNM"
-    },
-    {
-      "title": "Battle Royale 2023",
-      "description": "2nd Place.",
-      "wideView": "https://youtu.be/7Xi8FTHFqlY?si=VRXKGKUt4pss2_Rt",
-      "frontView": "https://youtu.be/siQwiV8r0WE?si=uBntD1n1Dx0NU0C2",
-      "videoId": "siQwiV8r0WE"
-    },
-    {
-      "title": "Spring Sing 2023: Artist Spotlight by Daily Bruin",
-      "description": "1st Place: Judge's Award and Bruin Choice Award.",
-      "wideView": "https://youtu.be/IZAU7-pB7jE?si=e2iesOtnSifbEqda",
-      "videoId": "IZAU7-pB7jE"
-    },
-    {
-      "title": "Ultimate Brawl 2023",
-      "description": "My first competition set with Samahang Modern.",
-      "wideView": "https://youtu.be/J99MiV-nmvY",
-      "frontView": "https://youtu.be/LzOjJJEz71A",
-      "videoId": "LzOjJJEz71A"
-    }
-  ]
-  
+  {
+    "title": "Ultimate Brawl 2024",
+    "description": "5th place (best collegiate teams). \nInspired by hit horror movie, Us.",
+    "wideView": "https://youtu.be/5oUVEDeF10E",
+    "frontView": "https://youtu.be/0B0mshIfHI4",
+    "videoId": "0B0mshIfHI4"
+  },
+  {
+    "title": "Battle Royale 2024",
+    "description": "2nd Place. Curated new set in 2 weeks.",
+    "wideView": "https://youtu.be/D5UAkdQK2M8?si=rhHHShwXTECt_pMZ",
+    "frontView": "https://youtu.be/0miYY6U-Y1A?si=vLAemla5NEZEzVC0",
+    "videoId": "0miYY6U-Y1A"
+  },
+  {
+    "title": "Risk: Concept Video",
+    "description": "Edited by Max Fukuhara",
+    "wideView": "https://youtu.be/dBL_QFCMUUk?si=ZvWAUfDqPh4MKYKm",
+    "videoId": "dBL_QFCMUUk"
+  },
+  {
+    "title": "Samahang Modern Winter Workshop 2023",
+    "description": "Choreography by Max Fukuhara, Michael Co, Antonio Rivera",
+    "wideView": "https://youtu.be/PR2s4KF_IfE?si=0ZjMSqYbLOOsDm2w",
+    "videoId": "PR2s4KF_IfE"
+  },
+  {
+    "title": "MaxtOut 2023",
+    "description": "1st Place Major Crew. \nBest Storytelling Award.",
+    "wideView": "https://youtu.be/G9LJgvGelxQ",
+    "frontView": "https://youtu.be/P0qRZcFeWNM",
+    "videoId": "P0qRZcFeWNM"
+  },
+  {
+    "title": "Battle Royale 2023",
+    "description": "2nd Place.",
+    "wideView": "https://youtu.be/7Xi8FTHFqlY?si=VRXKGKUt4pss2_Rt",
+    "frontView": "https://youtu.be/siQwiV8r0WE?si=uBntD1n1Dx0NU0C2",
+    "videoId": "siQwiV8r0WE"
+  },
+  {
+    "title": "Spring Sing 2023: Artist Spotlight by Daily Bruin",
+    "description": "1st Place: Judge's Award and Bruin Choice Award.",
+    "wideView": "https://youtu.be/IZAU7-pB7jE?si=e2iesOtnSifbEqda",
+    "videoId": "IZAU7-pB7jE"
+  },
+  {
+    "title": "Ultimate Brawl 2023",
+    "description": "My first competition set with Samahang Modern.",
+    "wideView": "https://youtu.be/J99MiV-nmvY",
+    "frontView": "https://youtu.be/LzOjJJEz71A",
+    "videoId": "LzOjJJEz71A"
+  }
+]
