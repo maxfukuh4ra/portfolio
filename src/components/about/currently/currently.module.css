@@ -12,6 +12,7 @@
 .sectionTitle {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: var(--color-dark);
 }
 
 .subtitle {
@@ -78,11 +79,11 @@
 .projectOrg {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #555;
+  color: var(--color-text);
 }
 
 .projectDescription {
   font-size: 0.9rem;
-  color: #444;
+  color: gray;
 }
 }

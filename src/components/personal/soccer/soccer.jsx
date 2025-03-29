@@ -58,7 +58,7 @@ const Soccer = () => {
         <p className={styles.subtitle}>
           As someone who only started club soccer in 2018, climbing up to the
           top rank in the US Youth Soccer pyramid was a challenge, but I'm proud
-          of what I've accomplished. Here are some of my highlights from my
+          of what I've accomplished.<br /> Here are some of my highlights from my
           prime:
         </p>
       </div>

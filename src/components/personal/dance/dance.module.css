@@ -1,14 +1,12 @@
-/* Main container */
+
 .danceContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   padding: 2rem;
-  background-color: #f9f9f9;
 }
 
-/* Dance Card */
 .danceCard {
   background: #fff;
   border-radius: 10px;
@@ -25,13 +23,11 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Dance Image */
 .danceImage {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
-/* Titles and Description */
 .danceTitle {
   font-size: 1.5rem;
   font-weight: bold;
@@ -46,7 +42,6 @@
   white-space: pre-line;
 }
 
-/* Links */
 .danceLinks {
   display: flex;
   justify-content: space-around;
@@ -66,7 +61,6 @@
   background-color: #005bb5;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .danceContainer {
     flex-direction: column;

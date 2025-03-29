@@ -33,8 +33,7 @@
   object-fit: cover;
   object-position: 200% -60%;
   transform: scale(1.75);
-  position: relative; /* make sure it's not on top by default */
-  z-index: 1; /* optional */
+  position: relative;
 }
 
 .waveEmoji {
@@ -42,14 +41,14 @@
   bottom: 0.2rem;
   right: 0.2rem;
   font-size: 1.5rem;
-  z-index: 2; /* ensures it's on top */
+  z-index: 2; 
 }
 
 .title {
   font-size: 4.5rem;
   font-weight: 900;
   margin-bottom: 2rem;
-  font-family: var(--font-roboto);
+  color: var(--color-dark);
 }
 
 .description {

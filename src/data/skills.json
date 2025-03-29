@@ -50,5 +50,9 @@
   {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "SQL",
+    "imageSrc": "skills/sql.png"
   }
 ]
