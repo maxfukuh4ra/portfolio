@@ -74,13 +74,24 @@
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    width: 45%;
+    width: 60%;
 }
+
+/* LEFT aligned cards */
+.left .timelineContent {
+  margin-left: 30rem; /* pushes the card away from the timeline */
+}
+
+/* RIGHT aligned cards */
+.right .timelineContent {
+  margin-right: 30rem; /* pushes the card away from the timeline */
+}
+
 
 
 .left {
     flex-direction: row-reverse;
-    text-align: right;
+    text-align: left;
 }
 
 .right {
