@@ -1,53 +1,46 @@
-import React from "react";
-
 import styles from "./about.module.css";
 import { getImageUrl } from "../../utils";
 
-import { IoCameraSharp } from "react-icons/io5";
-import { PiSoccerBallFill } from "react-icons/pi";
-import { BsServer } from "react-icons/bs";
-
 const About = () => {
   return (
-    <section className={styles.container}>
-      <h2 className={styles.title}>About</h2>
-      <div className={styles.content}>
+    <section className={styles.educationSection}>
+      <h2 className={styles.sectionTitle}>My Education</h2>
+      <div className={styles.educationCard}>
         <img
-          src={getImageUrl("about/headshot.png")}
-          className={styles.aboutImage}
+          src={getImageUrl("about/ucla-logo.png")} 
+          alt="UCLA Logo"
+          className={styles.educationLogo}
         />
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <BsServer size={150} style={{ marginRight: '20px' }}/>
-            <div className={styles.aboutItemText}>
-              <h3>Full-Stack Developer</h3>
-              <p>
-                I'm an aspiring full-stack developer with experience in building responsive
-                and optimized sites both in the front and back-end. 
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <IoCameraSharp size={180} style={{ marginRight: '20px' }}/>
-            <div className={styles.aboutItemText}>
-              <h3>Designer & Producer</h3>
-              <p>
-                I have experience creating professional quality flyers, video filming, video editing, 
-                and, merch / gear, utilizing Sony Alpha a7ii, gimbal, Adobe Illustrator, and Adobe Premiere Pro.
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <PiSoccerBallFill size={150} style={{ marginRight: '20px' }}/>
-            <div className={styles.aboutItemText}>
-              <h3>Athlete</h3>
-              <p>
-                As a retired soccer player, karate kid, tennis enthusiast, and current competitive dancer, 
-                I believe teamwork is the success to everything.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div className={styles.educationDetails}>
+          <h3>University of California, Los Angeles (UCLA)</h3>
+          <p>Bachelor of Science in Computer Science</p>
+          <p>2022-2026</p>
+          <p>GPA 3.7</p>
+          <ul>
+            <li>Technical Breadth in Technology Management</li>
+            <li>Scientific Breadth in Psychology</li>
+            <li>Switched from Cognitive Science in 2023</li>
+            <li>Dean's List - 2022 & 2023</li>
+          </ul>
+        </div>
+      </div>
+      
+        <div className={styles.educationCard}>
+        <img
+          src={getImageUrl("soccer/beckman.png")} 
+          alt="Beckman Logo"
+          className={styles.educationLogo}
+        />
+        <div className={styles.educationDetails}>
+          <h3>Arnold O. Beckman High School</h3>
+          <p>High School Diploma</p>
+          <p>2018-2022</p>
+          <p>GPA 4.8</p>
+          <ul>
+            <li>SAT: 1530</li>
+            <li>State Seal of Triliteracy (English, Japanese, Spanish)</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

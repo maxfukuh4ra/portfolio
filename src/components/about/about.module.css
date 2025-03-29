@@ -1,93 +1,59 @@
 @import "../../vars.css";
 
-.container {
-  position: relative;
-  background-color: rgba(51, 73, 101, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 80px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.title {
-  color: var(--color-bg);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.aboutImage {
-  width: 35%;
-}
-
-.aboutItems {
-  color: var(--color-bg);
+.educationSection {
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin-left: 50px;
-}
-
-.aboutItem {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
+.sectionTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+.educationCard {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 44rem;
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.aboutItem p {
-  font-size: 25px;
+.educationLogo {
+  width: 120px;
+  height: auto;
+  margin-right: 1.5rem;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.educationDetails {
+  flex: 1;
+}
 
-  .content {
-    flex-direction: column;
-  }
+.educationDetails h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 
-  .aboutImage {
-    display: none;
-  }
+.educationDetails p {
+  margin: 0.25rem 0;
+}
 
-  .aboutItems {
-    margin-top: 29px;
-  }
+.educationDetails ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
 
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.educationDetails li {
+  list-style-type: disc;
+  margin-bottom: 0.3rem;
 }
