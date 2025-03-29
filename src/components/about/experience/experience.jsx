@@ -14,7 +14,9 @@ const ExperienceTimeline = () => {
             className={`${styles.timelineItem} ${index % 2 === 0 ? styles.left : styles.right}`}
           >
             <div className={styles.timelineDot}></div>
-            <div className={styles.timelineDate}>{job.startDate} - {job.endDate}</div>
+            <div className={styles.timelineDate}>
+              {job.startDate} - {job.endDate}
+            </div>
             <div className={styles.timelineContent}>
               <img
                 src={getImageUrl(job.imageSrc)}

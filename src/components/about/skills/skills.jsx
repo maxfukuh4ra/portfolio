@@ -7,7 +7,9 @@ const SkillsSection = () => {
   return (
     <section className={styles.skillsSection}>
       <h2 className={styles.sectionTitle}>Languanges / Technologies</h2>
-      <p className={styles.subtitle}>Here are the tools, languages, and frameworks I work with regularly:</p>
+      <p className={styles.subtitle}>
+        Here are the tools, languages, and frameworks I work with regularly:
+      </p>
 
       <div className={styles.skillsGrid}>
         {skillsData.map((skill, index) => (

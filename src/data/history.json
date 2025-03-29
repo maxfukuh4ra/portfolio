@@ -12,7 +12,10 @@
     "organisation": "UCLA Student Media",
     "startDate": "Oct. 2024",
     "endDate": "Present",
-    "experiences": ["Maintained bruinwalk.com, UCLA’s official professor/course rating service, serving over 62,000 users and 730,000 monthly views", "Developed and deployed a new feature to display live enrollment distributions and class availability utilizing Python and PostgreSQL"],
+    "experiences": [
+      "Maintained bruinwalk.com, UCLA’s official professor/course rating service, serving over 62,000 users and 730,000 monthly views",
+      "Developed and deployed a new feature to display live enrollment distributions and class availability utilizing Python and PostgreSQL"
+    ],
     "imageSrc": "work/studentmedia.png"
   },
   {
@@ -20,7 +23,10 @@
     "organisation": "Bruin Sports Analytics - Tennis Consulting",
     "startDate": "Oct. 2024",
     "endDate": "Present",
-    "experiences": ["Developed a data-driven Filterable Match Viewer web app for UCLA Division 1 Men’s Tennis team using Next.js and Firebase", "Enhanced internal tagging tool, increasing reporting efficiency by 40%, serving as a critical resource for 30+ D1 student athletes"],
+    "experiences": [
+      "Developed a data-driven Filterable Match Viewer web app for UCLA Division 1 Men’s Tennis team using Next.js and Firebase",
+      "Enhanced internal tagging tool, increasing reporting efficiency by 40%, serving as a critical resource for 30+ D1 student athletes"
+    ],
     "imageSrc": "work/bsa.png"
   },
   {
@@ -28,7 +34,10 @@
     "organisation": "Daily Bruin",
     "startDate": "Oct. 2024",
     "endDate": "Mar. 2025",
-    "experiences": ["Built interactive and dynamic web pages for UCLA's largest and official student newspaper, using React and AWS deployment", "Collaborated with the design team to create visually appealing user interfaces, enhancing the reader experience and monthly traffic"],
+    "experiences": [
+      "Built interactive and dynamic web pages for UCLA's largest and official student newspaper, using React and AWS deployment",
+      "Collaborated with the design team to create visually appealing user interfaces, enhancing the reader experience and monthly traffic"
+    ],
     "imageSrc": "work/db.png"
   },
   {
@@ -36,7 +45,10 @@
     "organisation": "Taskformer",
     "startDate": "Aug. 2024",
     "endDate": "Oct. 2024",
-    "experiences": ["Generated a college counselor chatbot using BotPress that provides general advice and edit suggestions on college essay writing", "Engineered a Python automated cold outreach system increasing efficiency by 80%: utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails"],
+    "experiences": [
+      "Generated a college counselor chatbot using BotPress that provides general advice and edit suggestions on college essay writing",
+      "Engineered a Python automated cold outreach system increasing efficiency by 80%: utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails"
+    ],
     "imageSrc": "work/tf.png"
   },
   {
@@ -44,7 +56,10 @@
     "organisation": "Samahang Modern",
     "startDate": "Jan. 2023",
     "endDate": "Jun. 2024",
-    "experiences": ["Led a team of 40+ competitive dancers through 6 hours practices; awarded 1st at Spring Sing and Maxt Out Dance Competition", "Increased Instagram followers to 2200+ with professional quality flyers, video filming & editing garnering 440,000+ views"],
+    "experiences": [
+      "Led a team of 40+ competitive dancers through 6 hours practices; awarded 1st at Spring Sing and Maxt Out Dance Competition",
+      "Increased Instagram followers to 2200+ with professional quality flyers, video filming & editing garnering 440,000+ views"
+    ],
     "imageSrc": "work/sama.png"
   }
 ]

@@ -1,18 +1,17 @@
 [
-    {
-      "title": "BruinWalk @ UCLA Student Media",
-      "description": "Working on live enrollment distribution feature by integrating UCLA API and modifying BruinWalk's API endpoint.",
-      "videoSrc": "about/bwalkdemo.mov"
-    },
-    {
-      "title": "Filterable Match Viewer and Analytics Tagger @ Bruin Sports Analytics",
-      "description": "Optimizing the tennis tagging platform for NCAA D1 players and coaches for data-backed match analysis.",
-      "videoSrc": "about/bsademo.mov"
-    },
-    {
-      "title": "PillPal @ UCLA Anderson MBA",
-      "description": "Helping medical adherence through mobile app that sends geolocation and time-based reminders.",
-      "videoSrc": "about/pillpaldemo.mov"
-    }
-  ]
-  
+  {
+    "title": "BruinWalk @ UCLA Student Media",
+    "description": "Working on live enrollment distribution feature by integrating UCLA API and modifying BruinWalk's API endpoint.",
+    "videoSrc": "about/bwalkdemo.mov"
+  },
+  {
+    "title": "Filterable Match Viewer and Analytics Tagger @ Bruin Sports Analytics",
+    "description": "Optimizing the tennis tagging platform for NCAA D1 players and coaches for data-backed match analysis.",
+    "videoSrc": "about/bsademo.mov"
+  },
+  {
+    "title": "PillPal @ UCLA Anderson MBA",
+    "description": "Helping medical adherence through mobile app that sends geolocation and time-based reminders.",
+    "videoSrc": "about/pillpaldemo.mov"
+  }
+]

@@ -1,121 +1,120 @@
 @import "../../../vars.css";
 
 .experienceSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
 }
 
 .sectionTitle {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .timeline {
-    position: relative;
-    margin: 2rem 0;
+  position: relative;
+  margin: 2rem 0;
 }
 
 .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    background: #d0d0d0;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: #d0d0d0;
 }
 
 .timelineItem {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3rem 0;
-    width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+  width: 100%;
 }
 
 .timelineDot {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 12px;
-    height: 12px;
-    background: #4f46e5;
-    border-radius: 50%;
-    z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #4f46e5;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .timelineDate {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.8rem;
-    color: gray;
-    white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: gray;
+  white-space: nowrap;
 }
 
-
 .left .timelineDate {
-    right: calc(50% + 1rem); 
-    text-align: right;
+  right: calc(50% + 1rem);
+  text-align: right;
 }
 
 .right .timelineDate {
-    left: calc(50% + 1rem); 
-    text-align: left;
+  left: calc(50% + 1rem);
+  text-align: left;
 }
 
-
 .timelineContent {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    width: 30rem;
-    max-width: 30rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  max-width: 30rem;
 }
 
 .left .timelineContent {
-  margin-left: 40rem; 
+  margin-left: 40rem;
 }
 
-
 .right .timelineContent {
-  margin-right: 30rem; 
+  margin-right: 30rem;
 }
 
 .left {
-    flex-direction: row-reverse;
-    text-align: left;
+  flex-direction: row-reverse;
+  text-align: left;
 }
 
 .right {
-    flex-direction: row;
-    text-align: left;
+  flex-direction: row;
+  text-align: left;
 }
 
 .workLogo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
 }
 
 .orgName {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 ul {
-    margin-top: 0.5rem;
-    padding-left: 1rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
 }
 
 li {
-    font-size: 0.9rem;
-    margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
 }
 
 .experienceList {
