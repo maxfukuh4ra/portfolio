@@ -1,0 +1,24 @@
+[
+    {
+      "title": "BruinWalk",
+      "organization": "UCLA Student Media",
+      "description": "Working on live enrollment distribution feature by integrating UCLA API and modifying BruinWalk's API endpoint.",
+      "imageSrc": "about/bwalk.svg",
+      "link": ""
+    },
+    {
+      "title": "Filterable Match Viewer and Analytics Tagger",
+      "organization": "Bruin Sports Analytics",
+      "description": "Optimizing the tennis tagging platform for NCAA D1 players and coaches for data-backed match analysis.",
+      "imageSrc": "work/bsa.png",
+      "link": ""
+    },
+    {
+      "title": "PillPal",
+      "organization": "Personal Project",
+      "description": "Helping medical adherence through mobile app that sends geolocation and time-based reminders",
+      "imageSrc": "projects/pillpal.png",
+      "link": ""
+    }
+  ]
+  

@@ -9,6 +9,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "./App.module.css";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
+import CurrentlySection from "./components/about/currently/currently";
 import About from "./components/about/about";
 import ProjectsPage from "./pages/projects/projects";
 import Contact from "./pages/contact/contact";
@@ -40,6 +41,7 @@ function App() {
                 </>
               }
             />
+            <Route path="/portfolio/currently" element={<CurrentlySection />} />
             <Route path="/portfolio/projects" element={<ProjectsPage />} />
             <Route path="/portfolio/personal" element={<Personal />} />
             <Route path="/portfolio/contact" element={<Contact />} />
