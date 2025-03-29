@@ -31,15 +31,15 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/portfolio/blog" 
-              className={location.pathname === "/portfolio/blog" ? styles.active : ""}
-            >Blog</Link>
+              to="/portfolio/projects" 
+              className={location.pathname === "/portfolio/projects" ? styles.active : ""}
+            >Projects</Link>
           </li>
           <li>
             <Link 
-              to="/portfolio/about" 
-              className={location.pathname === "/portfolio/about" ? styles.active : ""}
-            >About</Link>
+              to="/portfolio/personal" 
+              className={location.pathname === "/portfolio/personal" ? styles.active : ""}
+            >Personal</Link>
           </li>
           <li>
             <Link 
