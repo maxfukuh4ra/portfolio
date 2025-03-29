@@ -16,7 +16,7 @@
 }
 
 .subtitle {
-  color: gray;
+  color: #555;
   font-size: 0.95rem;
   margin-bottom: 2rem;
 }
@@ -84,6 +84,6 @@
 
 .projectDescription {
   font-size: 0.9rem;
-  color: gray;
+  color: #555;
 }
 }
