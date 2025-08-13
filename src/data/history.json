@@ -1,10 +1,14 @@
 [
   {
-    "role": "Cybersecurity Engineering Consultant Intern",
-    "organisation": "EY",
+    "role": "Software Engineer Intern -- Cybersecurity",
+    "organisation": "Ernst and Young (EY)",
     "startDate": "Jun. 2025",
     "endDate": "Aug. 2025",
-    "experiences": ["Incoming Summer 2025"],
+    "experiences": [
+      "Engineered Python automation in Splunk SOAR to investigate malicious IPs and create ServiceNow tickets, reducing manual triage time by 35%",
+      "Analyzed ~125 security incidents using deep-packet inspection, TCP/IP, and network traffic heuristics to support triage and incident response",
+      "Designed and created a centralized Splunk dashboard using the Microsoft Defender API to pre-test and validate threat signatures across 6 Azure tenants, reducing a previously 1-hour manual task to a 10-second, one-click process and streamlining client workflows on a single visualization"
+    ],
     "imageSrc": "work/ey.png"
   },
   {
@@ -70,7 +74,6 @@
     "experiences": [],
     "imageSrc": "work/usopen.svg"
   },
-
   {
     "role": "Product Management Intern",
     "organisation": "SkyDrive",
