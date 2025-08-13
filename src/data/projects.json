@@ -7,13 +7,6 @@
     "github": "https://github.com/maxfukuh4ra/pillpal"
   },
   {
-    "title": "FitFueler",
-    "imageSrc": "projects/fitfueler.png",
-    "description": "Full-stack mobile app allowing users to customize their diet plan/restriction and log their meal data. AI model generates personalized meal plans tailored to taste preference and user fitness goal",
-    "liveDemo": "",
-    "github": "https://github.com/MattC04/FitFueler"
-  },
-  {
     "title": "UCLA D1 Tennis Filterable Data Match Viewer",
     "imageSrc": "projects/bsa.png",
     "description": "Full-stack web app for custom tennis match playback, allowing coaches to easily filter and search points by attributes for film review.",
