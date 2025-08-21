@@ -4,6 +4,7 @@ import styles from './loading.module.css';
 const Loading = ({ onComplete }) => {
     const [progress, setProgress] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
+    const [isFading, setIsFading] = useState(false);
 
     useEffect(() => {
         const duration = 5000; // 5 seconds
@@ -14,11 +15,14 @@ const Loading = ({ onComplete }) => {
             setProgress(prev => {
                 if (prev >= 100) {
                     clearInterval(timer);
-                    // Add a small delay before hiding
+                    // Start fade out animation
+                    setIsFading(true);
+
+                    // Wait for fade out animation to complete, then hide
                     setTimeout(() => {
                         setIsVisible(false);
                         onComplete();
-                    }, 200);
+                    }, 800); // Match the fadeOut animation duration
                     return 100;
                 }
                 return Math.min(prev + increment, 100);
@@ -31,7 +35,7 @@ const Loading = ({ onComplete }) => {
     if (!isVisible) return null;
 
     return (
-        <div className={styles.loadingOverlay}>
+        <div className={`${styles.loadingOverlay} ${isFading ? styles.fadeOut : ''}`}>
             <div className={styles.loadingContainer}>
                 <div className={styles.progressCircle}>
                     <svg className={styles.svg} viewBox="0 0 120 120">

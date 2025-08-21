@@ -14,6 +14,10 @@
     animation: fadeIn 0.5s ease-in-out;
 }
 
+.loadingOverlay.fadeOut {
+    animation: fadeOut 0.8s ease-in-out forwards;
+}
+
 .loadingContainer {
     text-align: center;
     color: var(--color-text);
@@ -73,6 +77,18 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.95);
     }
 }
 
