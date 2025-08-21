@@ -42,7 +42,7 @@ function App() {
     <div className={styles.App}>
       <Navbar />
       <TransitionGroup>
-        <CSSTransition key={location.pathname} timeout={300} classNames="fade">
+        <CSSTransition key={location.pathname} timeout={1200} classNames="fade">
           <Routes location={location}>
             <Route
               path="/portfolio"
