@@ -5,8 +5,10 @@ import {
   useLocation,
 } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useState } from "react";
 
 import styles from "./App.module.css";
+import Loading from "./components/loading/loading";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import CurrentlySection from "./components/about/currently/currently";
@@ -26,6 +28,15 @@ import "./transitions.css";
 
 function App() {
   const location = useLocation();
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
+  if (isLoading) {
+    return <Loading onComplete={handleLoadingComplete} />;
+  }
 
   return (
     <div className={styles.App}>

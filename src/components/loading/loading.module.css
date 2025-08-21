@@ -1,0 +1,105 @@
+@import "../../vars.css";
+
+.loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.loadingContainer {
+    text-align: center;
+    color: var(--color-text);
+    font-family: var(--font);
+}
+
+.progressCircle {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.svg {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+.backgroundCircle {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-linecap: round;
+}
+
+.progressFill {
+    fill: none;
+    stroke: #2c5aa0;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.1s ease;
+    filter: drop-shadow(0 0 10px rgba(44, 90, 160, 0.5));
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-text);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loadingText {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    animation: pulse 2s ease-in-out infinite;
+    color: var(--color-text);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.9;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .percentage {
+        font-size: 20px;
+    }
+
+    .loadingText {
+        font-size: 16px;
+    }
+}
