@@ -25,6 +25,7 @@ import Side from "./components/personal/side/side";
 // import Board from "./components/personal/board/board";
 
 import "./transitions.css";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   const location = useLocation();
@@ -74,7 +75,9 @@ function App() {
 function AppWithRouter() {
   return (
     <Router>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </Router>
   );
 }

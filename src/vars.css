@@ -1,8 +1,22 @@
 :root {
+  /* Light Theme (Default) */
   --color-text: #555;
   --color-primary: #5da3fa;
   --color-secondary: #e1effd;
   --color-dark: #000000;
   --color-bg: #f3f9ff;
+  --color-surface: #ffffff;
+  --color-border: #e1e5e9;
   --font: "Roboto";
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --color-text: #e1e5e9;
+  --color-primary: #5da3fa;
+  --color-secondary: #1a2332;
+  --color-dark: #ffffff;
+  --color-bg: #0f1419;
+  --color-surface: #1a2332;
+  --color-border: #2d3748;
 }
