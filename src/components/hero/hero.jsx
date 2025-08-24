@@ -17,25 +17,41 @@ const Hero = () => {
 
         <h1 className={styles.title}>Hi, I'm Max Fukuhara</h1>
 
-        <Typed
-          strings={[
-            "CS student at UCLA",
-            "aspiring software engineer",
-            "aspiring product manager",
-            "aspiring tech consultant",
-            "retired soccer player",
-            "average tennis player",
-            "surfer and snowboarder",
-            "decent dancer",
-            "somewhat consistent gym rat",
-            "big foodie",
-            "dog lover",
-          ]}
-          typeSpeed={50}
-          backSpeed={30}
-          loop
-          className={styles.description}
-        />
+        <div className={styles.tagline}>
+          <span className={styles.taglineText}>Developer &</span>
+          <Typed
+            strings={[
+              "CS student at UCLA",
+              "aspiring software engineer",
+              "aspiring product manager",
+              "retired soccer player",
+              "intramural tennis demon",
+              "surfer and snowboarder",
+              "community dancer",
+              "big foodie",
+              "dog lover",
+            ]}
+            typeSpeed={50}
+            backSpeed={30}
+            loop
+            className={styles.taglineHighlight}
+          />
+        </div>
+
+        <div className={styles.experience}>
+          <div className={styles.experienceItem}>
+            <span className={styles.experienceIcon}>💼</span>
+            <span>Cybersecurity Engineer at EY</span>
+          </div>
+          <div className={styles.experienceItem}>
+            <span className={styles.experienceIcon}>🔬</span>
+            <span>Software Engineer at BruinWalk</span>
+          </div>
+          <div className={styles.experienceItem}>
+            <span className={styles.experienceIcon}>🎓</span>
+            <span>UCLA '26</span>
+          </div>
+        </div>
 
         <div className={styles.buttons}>
           <a href="/portfolio/contact" className={styles.contactBtn}>
