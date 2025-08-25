@@ -1,0 +1,553 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: var(--color-text);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* Tennis Section */
+.tennisSection {
+    margin-bottom: 4rem;
+    background: var(--color-surface);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.sectionDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+/* Carousel Styles */
+.carouselContainer {
+    margin: 2rem 0;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carouselContent {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background: var(--color-surface);
+}
+
+.carouselImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.carouselImage.fadeIn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carouselImage.fadeOut {
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+
+.carouselImage.loaded {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.imageLoader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-text);
+    z-index: 5;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--color-border);
+    border-top: 4px solid var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.carouselImage:hover {
+    transform: scale(1.02);
+}
+
+.carouselCaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.1s linear;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.carouselButton:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.prevButton {
+    left: -25px;
+}
+
+.nextButton {
+    right: -25px;
+}
+
+.carouselControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.playPauseButton {
+    background: transparent;
+    border: none;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.playPauseIcon {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: contain;
+}
+
+.playPauseButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carouselIndicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
+.activeIndicator {
+    background: #667eea;
+    transform: scale(1.2);
+}
+
+/* Tennis Details */
+.tennisDetails {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--color-surface);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+}
+
+.tennisDetails h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.experienceList {
+    list-style: none;
+    padding: 0;
+}
+
+.experienceList li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    opacity: 0.8;
+}
+
+.experienceList li::before {
+    content: "🎾";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+.tennisStats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.statItem {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.statNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Other Side Hustles */
+.otherHustles {
+    margin-bottom: 4rem;
+}
+
+.hustlesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hustleCard {
+    background: var(--color-surface);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+}
+
+.hustleCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hustleIcon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hustleTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.hustleOrg {
+    font-size: 1rem;
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.hustleDuration {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.hustleDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.hustleHighlights {
+    list-style: none;
+    padding: 0;
+}
+
+.hustleHighlights li {
+    padding: 0.3rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--color-text);
+    opacity: 0.8;
+}
+
+.hustleHighlights li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Call to Action Section */
+.ctaSection {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.ctaTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ctaDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.ctaButton {
+    display: inline-block;
+    background: white;
+    color: #667eea;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .tennisSection {
+        padding: 1.5rem;
+        margin: 0 0.5rem 2rem;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carouselContent {
+        max-width: 100%;
+    }
+
+    .carouselImage {
+        height: 300px;
+    }
+
+    .carouselButton {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .prevButton {
+        left: -20px;
+    }
+
+    .nextButton {
+        right: -20px;
+    }
+
+    .tennisStats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hustlesGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hustleCard {
+        padding: 1.5rem;
+    }
+
+    .ctaSection {
+        padding: 2rem 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .ctaTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .carouselImage {
+        height: 250px;
+    }
+
+    .carouselButton {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .prevButton {
+        left: -17px;
+    }
+
+    .nextButton {
+        right: -17px;
+    }
+}

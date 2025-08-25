@@ -1,0 +1,37 @@
+{
+    "tennisImages": [
+        {
+            "src": "work/usopen.svg",
+            "alt": "US Open Tennis Championship",
+            "caption": "US Open Tennis Championship - Flushing Meadows, NY"
+        },
+        {
+            "src": "work/zverev_interview.png",
+            "alt": "Interviewing Alexander Zverev (ATP #3)",
+            "caption": "Interviewing top-ranked players during the tournament"
+        },
+        {
+            "src": "work/usopen.svg",
+            "alt": "Coordinating tournament activities",
+            "caption": "Coordinating tournament activities and player logistics"
+        },
+        {
+            "src": "work/usopen.svg",
+            "alt": "Behind the scenes at US Open",
+            "caption": "Behind the scenes coordination work"
+        }
+    ],
+    "tennisExperience": {
+        "title": "US Open Tennis Assistant Producer",
+        "organization": "USTA",
+        "duration": "3 years (2021-2023)",
+        "description": "Coordinated player interviews, managed tournament logistics, and ensured smooth operations during one of tennis's biggest events.",
+        "highlights": [
+            "Directly interviewed top-ranked ATP and WTA players",
+            "Assisted live television content production with research",
+            "Coordinated with media teams and tournament officials",
+            "Managed player interview schedules and logistics",
+            "Set up lighting, sound, and camera equipment for interviews"
+        ]
+    }
+}
