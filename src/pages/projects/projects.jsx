@@ -10,37 +10,120 @@ const ProjectsPage = () => {
     setProjects(projectsData);
   }, []);
 
+  const getTechnologyIcon = (tech) => {
+    const iconMap = {
+      "AWS": "skills/aws.png",
+      "React": "skills/react.png",
+      "React Native": "skills/react.png",
+      "ExpoGo": "skills/expogo.png",
+      "Node.js": "skills/node.png",
+      "MongoDB": "skills/mongodb.png",
+      "Firebase": "skills/firebase.png",
+      "Express.js": "skills/express.png",
+      "Next.js": "skills/nextjs.png",
+      "Express.js": "skills/expressjs.png",
+      "TypeScript": "skills/typescript.png",
+      "JavaScript": "skills/javascript.png",
+      "Python": "skills/python.png",
+      "PyTorch": "skills/pytorch.png",
+      "C++": "skills/c++.png",
+      "HTML": "skills/html.png",
+      "CSS": "skills/css.png",
+      "Selenium": "skills/selenium.png",
+      "PostgreSQL": "skills/postgresql.png",
+      "OpenAI API": "skills/openai.png",
+      "Google API": "skills/gmail.png",
+      "BeautifulSoup": "skills/bs4.png",
+      "LinkedIn API": "skills/linkedin.png",
+      "Spotify API": "skills/spotify.png",
+      "Pandas": "skills/pandas.png",
+      "NumPy": "skills/numpy.png",
+      "Scikit-learn": "skills/scikitlearn.png",
+    };
+    return iconMap[tech] || "skills/default.png";
+  };
+
   return (
-    <div className={styles.projectsContainer}>
-      {projects.map((project, index) => (
-        <div key={index} className={styles.projectCard}>
-          <img
-            src={getImageUrl(project.imageSrc)}
-            alt={`${project.title} screenshot`}
-            className={styles.projectImage}
-          />
-          <h3 className={styles.projectTitle}>{project.title}</h3>
-          <p className={styles.projectDescription}>{project.description}</p>
-          <div className={styles.projectLinks}>
-            <a
-              href={project.liveDemo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.projectLink}
-            >
-              Live Demo
-            </a>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.projectLink}
-            >
-              GitHub
-            </a>
+    <div className={styles.projectsPage}>
+      {/* Header Section */}
+      <div className={styles.header}>
+        <h1 className={styles.title}>Projects</h1>
+        <p className={styles.subtitle}>
+          A showcase of my recent work in web development, data visualization, and full-stack applications.
+        </p>
+      </div>
+
+      {/* Projects Section */}
+      <div className={styles.projectsSection}>
+        {projects.map((project, index) => (
+          <div key={index} className={styles.projectContainer}>
+            <div className={`${styles.projectContent} ${index % 2 === 0 ? styles.imageLeft : styles.imageRight}`}>
+              {/* Project Image */}
+              <div className={styles.projectImageContainer}>
+                <img
+                  src={getImageUrl(project.imageSrc)}
+                  alt={`${project.title} screenshot`}
+                  className={styles.projectImage}
+                />
+              </div>
+
+              {/* Project Details */}
+              <div className={styles.projectDetails}>
+                <div className={styles.projectHeader}>
+                  <span className={styles.projectYear}>{project.year}</span>
+                  <div className={styles.yearUnderline}></div>
+                </div>
+
+                <h2 className={styles.projectTitle}>{project.title}</h2>
+
+                <p className={styles.projectDescription}>{project.description}</p>
+
+                {/* Technologies */}
+                <div className={styles.technologies}>
+                  {project.technologies.map((tech, techIndex) => (
+                    <div key={techIndex} className={styles.techIcon} title={tech}>
+                      <img
+                        src={getImageUrl(getTechnologyIcon(tech))}
+                        alt={tech}
+                        className={styles.techIconImage}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Action Buttons */}
+                <div className={styles.actionButtons}>
+                  {project.liveDemo && (
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.actionButton}
+                    >
+                      <span className={styles.buttonIcon}>🌐</span>
+                      View Live Demo
+                    </a>
+                  )}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.actionButton}
+                  >
+                    <img
+                      src={getImageUrl("contact/github.png")}
+                      alt="GitHub"
+                      className={styles.buttonIcon}
+                      style={{ width: '16px', height: '16px' }}
+                    />
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

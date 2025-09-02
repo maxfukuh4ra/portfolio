@@ -1,44 +1,111 @@
 [
   {
+    "title": "UCLA Ranked",
+    "imageSrc": "projects/pillpal.png",
+    "description": " UCLA-based peer-driven ranking site, reaching 100+ users and boosting campus engagement with profile discovery and recognition.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/uclaranked",
+    "year": "2025",
+    "technologies": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "PostgreSQL",
+      "AWS"
+    ]
+  },
+  {
     "title": "PillPal",
     "imageSrc": "projects/pillpal.png",
     "description": "Full-stack mobile app that sends geolocation and time-based notifications to remind users to take their medications, track their medication intake, monitor adherence trends, and visualize health data.",
     "liveDemo": "",
-    "github": "https://github.com/maxfukuh4ra/pillpal"
-  },
-  {
-    "title": "UCLA D1 Tennis Filterable Data Match Viewer",
-    "imageSrc": "projects/BSA.png",
-    "description": "Full-stack web app for custom tennis match playback, allowing coaches to easily filter and search points by attributes for film review.",
-    "liveDemo": "https://match-viewing-dashboard.web.app/",
-    "github": "https://github.com/awest25/Tennis-Video-Viewer"
-  },
-  {
-    "title": "Jam",
-    "imageSrc": "projects/jam.png",
-    "description": "Full-stack web app enabling users to search, follow users, and interact with their listening activity with likes. Integrated Spotify API to display users live-listening activity, weekly statistics, embedded song previews, and direct links.",
-    "liveDemo": "https://www.youtube.com/watch?v=FfWPnGlTNsg",
-    "github": "https://github.com/JensonW7/jam"
-  },
-  {
-    "title": "Reachify",
-    "imageSrc": "projects/reachify.png",
-    "description": "Python automated cold outreach system for LinkedIn. Utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails.",
-    "liveDemo": "",
-    "github": "https://github.com/maxfukuh4ra/reachify"
-  },
-  {
-    "title": "Mancala",
-    "imageSrc": "projects/mancala.png",
-    "description": "Built an object-oriented C++ game utilizing binary search tree-based predictive AI to make best move possible against player.",
-    "liveDemo": "",
-    "github": "https://github.com/maxfukuh4ra/mancala"
+    "github": "https://github.com/maxfukuh4ra/pillpal",
+    "year": "2025",
+    "technologies": [
+      "TypeScript",
+      "JavaScript",
+      "React Native",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "ExpoGo"
+    ]
   },
   {
     "title": "Predicting DoorDash Deliveries",
     "imageSrc": "projects/ddd.png",
     "description": "From open-source Kaggle data-set, followed the DSLC to create a model using machine learning techniques such as linear regression to predict DoorDash deliveries.",
     "liveDemo": "",
-    "github": "https://github.com/maxfukuh4ra/doordashdelivery"
+    "github": "https://github.com/maxfukuh4ra/doordashdelivery",
+    "year": "2024",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "PyTorch"
+    ]
+  },
+  {
+    "title": "UCLA D1 Tennis Filterable Data Match Viewer",
+    "imageSrc": "projects/BSA.png",
+    "description": "Full-stack web app for custom tennis match playback, allowing coaches to easily filter and search points by attributes for film review.",
+    "liveDemo": "https://match-viewing-dashboard.web.app/",
+    "github": "https://github.com/awest25/Tennis-Video-Viewer",
+    "year": "2025",
+    "technologies": [
+      "Next.js",
+      "Node.js",
+      "Firebase",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "title": "Jam",
+    "imageSrc": "projects/jam.png",
+    "description": "Full-stack web app enabling users to search, follow users, and interact with their listening activity with likes. Integrated Spotify API to display users live-listening activity, weekly statistics, embedded song previews, and direct links.",
+    "liveDemo": "https://www.youtube.com/watch?v=FfWPnGlTNsg",
+    "github": "https://github.com/JensonW7/jam",
+    "year": "2024",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Spotify API"
+    ]
+  },
+  {
+    "title": "Reachify",
+    "imageSrc": "projects/reachify.png",
+    "description": "Python automated cold outreach system for LinkedIn. Utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/reachify",
+    "year": "2024",
+    "technologies": [
+      "Python",
+      "Selenium",
+      "BeautifulSoup",
+      "OpenAI API",
+      "Google API",
+      "LinkedIn API"
+    ]
+  },
+  {
+    "title": "Mancala",
+    "imageSrc": "projects/mancala.png",
+    "description": "Built an object-oriented C++ game utilizing binary search tree-based predictive AI to make best move possible against player.",
+    "liveDemo": "",
+    "github": "https://github.com/maxfukuh4ra/mancala",
+    "year": "2023",
+    "technologies": [
+      "C++"
+    ]
   }
 ]
