@@ -21,7 +21,6 @@ const ProjectsPage = () => {
       "Node.js": "skills/node.png",
       "MongoDB": "skills/mongodb.png",
       "Firebase": "skills/firebase.png",
-      "Express.js": "skills/express.png",
       "Next.js": "skills/nextjs.png",
       "Express.js": "skills/expressjs.png",
       "TypeScript": "skills/typescript.png",
