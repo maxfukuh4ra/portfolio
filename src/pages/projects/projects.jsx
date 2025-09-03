@@ -4,10 +4,12 @@ import projectsData from "../../data/projects.json";
 import { getImageUrl } from "../../utils";
 
 const ProjectsPage = () => {
-  const [projects, setProjects] = useState([]);
+  const [featuredProjects, setFeaturedProjects] = useState([]);
+  const [personalProjects, setPersonalProjects] = useState([]);
 
   useEffect(() => {
-    setProjects(projectsData);
+    setFeaturedProjects(projectsData.featuredProjects || []);
+    setPersonalProjects(projectsData.personalProjects || []);
   }, []);
 
   const getTechnologyIcon = (tech) => {
@@ -26,6 +28,10 @@ const ProjectsPage = () => {
       "JavaScript": "skills/javascript.png",
       "Python": "skills/python.png",
       "PyTorch": "skills/pytorch.png",
+      "Django": "skills/django.png",
+      "DigitalOcean": "skills/digitalocean.png",
+      "Docker": "skills/dockers.png",
+      "Kubernetes": "skills/kubernetes.png",
       "C++": "skills/c++.png",
       "HTML": "skills/html.png",
       "CSS": "skills/css.png",
@@ -53,77 +59,177 @@ const ProjectsPage = () => {
         </p>
       </div>
 
-      {/* Projects Section */}
-      <div className={styles.projectsSection}>
-        {projects.map((project, index) => (
-          <div key={index} className={styles.projectContainer}>
-            <div className={`${styles.projectContent} ${index % 2 === 0 ? styles.imageLeft : styles.imageRight}`}>
-              {/* Project Image */}
-              <div className={styles.projectImageContainer}>
-                <img
-                  src={getImageUrl(project.imageSrc)}
-                  alt={`${project.title} screenshot`}
-                  className={styles.projectImage}
-                />
-              </div>
-
-              {/* Project Details */}
-              <div className={styles.projectDetails}>
-                <div className={styles.projectHeader}>
-                  <span className={styles.projectYear}>{project.year}</span>
-                  <div className={styles.yearUnderline}></div>
+      {/* Featured Projects Section */}
+      {featuredProjects.length > 0 && (
+        <div className={styles.featuredSection}>
+          <h2 className={styles.featuredTitle}>Featured Projects</h2>
+          <div className={styles.featuredProjects}>
+            {featuredProjects.map((project, index) => (
+              <div key={index} className={styles.featuredProject}>
+                <div className={styles.featuredImageContainer}>
+                  <img
+                    src={getImageUrl(project.imageSrc)}
+                    alt={`${project.title} screenshot`}
+                    className={styles.featuredImage}
+                  />
                 </div>
 
-                <h2 className={styles.projectTitle}>{project.title}</h2>
+                <div className={styles.featuredDetails}>
+                  <div className={styles.projectHeader}>
+                    <span className={styles.projectYear}>{project.year}</span>
+                    <div className={styles.yearUnderline}></div>
+                  </div>
 
-                <p className={styles.projectDescription}>{project.description}</p>
+                  <h3 className={styles.featuredProjectTitle}>{project.title}</h3>
 
-                {/* Technologies */}
-                <div className={styles.technologies}>
-                  {project.technologies.map((tech, techIndex) => (
-                    <div key={techIndex} className={styles.techIcon} title={tech}>
-                      <img
-                        src={getImageUrl(getTechnologyIcon(tech))}
-                        alt={tech}
-                        className={styles.techIconImage}
-                      />
+                  <p className={styles.featuredDescription}>{project.description}</p>
+
+                  {/* Features List */}
+                  {project.features && (
+                    <div className={styles.featuresList}>
+                      <h4 className={styles.featuresTitle}>Key Features:</h4>
+                      <ul className={styles.features}>
+                        {project.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className={styles.featureItem}>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  ))}
-                </div>
+                  )}
 
-                {/* Action Buttons */}
-                <div className={styles.actionButtons}>
-                  {project.liveDemo && (
+                  {/* Video Demo Placeholder */}
+                  <div className={styles.videoContainer}>
+                    <div className={styles.videoPlaceholder}>
+                      <span className={styles.videoIcon}>🎥</span>
+                      <p>Video Demo Coming Soon</p>
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className={styles.technologies}>
+                    {project.technologies.map((tech, techIndex) => (
+                      <div key={techIndex} className={styles.techIcon} title={tech}>
+                        <img
+                          src={getImageUrl(getTechnologyIcon(tech))}
+                          alt={tech}
+                          className={styles.techIconImage}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className={styles.actionButtons}>
+                    {project.liveDemo && (
+                      <a
+                        href={project.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.actionButton}
+                      >
+                        <span className={styles.buttonIcon}>🌐</span>
+                        View Live Demo
+                      </a>
+                    )}
                     <a
-                      href={project.liveDemo}
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.actionButton}
                     >
-                      <span className={styles.buttonIcon}>🌐</span>
-                      View Live Demo
+                      <img
+                        src={getImageUrl("contact/github.png")}
+                        alt="GitHub"
+                        className={styles.buttonIcon}
+                        style={{ width: '16px', height: '16px' }}
+                      />
+                      View Code
                     </a>
-                  )}
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.actionButton}
-                  >
-                    <img
-                      src={getImageUrl("contact/github.png")}
-                      alt="GitHub"
-                      className={styles.buttonIcon}
-                      style={{ width: '16px', height: '16px' }}
-                    />
-                    View Code
-                  </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
+
+      {/* Personal Projects Section */}
+      {personalProjects.length > 0 && (
+        <div className={styles.personalSection}>
+          <h2 className={styles.personalTitle}>Other Projects</h2>
+          <div className={styles.projectsSection}>
+            {personalProjects.map((project, index) => (
+              <div key={index} className={styles.projectContainer}>
+                <div className={`${styles.projectContent} ${index % 2 === 0 ? styles.imageLeft : styles.imageRight}`}>
+                  {/* Project Image */}
+                  <div className={styles.projectImageContainer}>
+                    <img
+                      src={getImageUrl(project.imageSrc)}
+                      alt={`${project.title} screenshot`}
+                      className={styles.projectImage}
+                    />
+                  </div>
+
+                  {/* Project Details */}
+                  <div className={styles.projectDetails}>
+                    <div className={styles.projectHeader}>
+                      <span className={styles.projectYear}>{project.year}</span>
+                      <div className={styles.yearUnderline}></div>
+                    </div>
+
+                    <h2 className={styles.projectTitle}>{project.title}</h2>
+
+                    <p className={styles.projectDescription}>{project.description}</p>
+
+                    {/* Technologies */}
+                    <div className={styles.technologies}>
+                      {project.technologies.map((tech, techIndex) => (
+                        <div key={techIndex} className={styles.techIcon} title={tech}>
+                          <img
+                            src={getImageUrl(getTechnologyIcon(tech))}
+                            alt={tech}
+                            className={styles.techIconImage}
+                          />
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className={styles.actionButtons}>
+                      {project.liveDemo && (
+                        <a
+                          href={project.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.actionButton}
+                        >
+                          <span className={styles.buttonIcon}>🌐</span>
+                          View Live Demo
+                        </a>
+                      )}
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.actionButton}
+                      >
+                        <img
+                          src={getImageUrl("contact/github.png")}
+                          alt="GitHub"
+                          className={styles.buttonIcon}
+                          style={{ width: '16px', height: '16px' }}
+                        />
+                        View Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

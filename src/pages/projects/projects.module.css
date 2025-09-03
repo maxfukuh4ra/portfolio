@@ -34,6 +34,190 @@
   opacity: 0.8;
 }
 
+/* Featured Projects Section */
+.featuredSection {
+  margin-bottom: 6rem;
+}
+
+.featuredTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.featuredTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+.featuredProjects {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.featuredProject {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  background: var(--color-surface);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featuredProject:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.featuredImageContainer {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featuredImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.featuredImageContainer:hover .featuredImage {
+  transform: scale(1.02);
+}
+
+.featuredDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.featuredProjectTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.featuredDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Features List */
+.featuresList {
+  margin-top: 1rem;
+}
+
+.featuresTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 0.75rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureItem {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.featureItem::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+/* Video Container */
+.videoContainer {
+  margin: 1.5rem 0;
+}
+
+.videoPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-secondary);
+  border: 2px dashed var(--color-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.videoPlaceholder:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.videoIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.videoPlaceholder p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Personal Projects Section */
+.personalSection {
+  margin-top: 4rem;
+}
+
+.personalTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.personalTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
 /* Projects Section */
 .projectsSection {
   display: flex;
@@ -214,6 +398,11 @@
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
+  .featuredProject {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .projectContent {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -226,6 +415,7 @@
     order: unset;
   }
 
+  .featuredProjectTitle,
   .projectTitle {
     font-size: 2rem;
   }
@@ -244,6 +434,15 @@
     font-size: 1.1rem;
   }
 
+  .featuredTitle,
+  .personalTitle {
+    font-size: 2rem;
+  }
+
+  .featuredProject {
+    padding: 1.5rem;
+  }
+
   .projectsSection {
     gap: 4rem;
   }
@@ -252,10 +451,12 @@
     gap: 1.5rem;
   }
 
+  .featuredProjectTitle,
   .projectTitle {
     font-size: 1.8rem;
   }
 
+  .featuredDescription,
   .projectDescription {
     font-size: 1rem;
   }
@@ -288,6 +489,7 @@
     font-size: 2rem;
   }
 
+  .featuredProjectTitle,
   .projectTitle {
     font-size: 1.5rem;
   }
