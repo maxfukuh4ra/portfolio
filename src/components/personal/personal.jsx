@@ -19,10 +19,10 @@ const Personal = () => {
       route: "/portfolio/personal/dance",
     },
     {
-      title: "Board Sports",
-      description: "Surf in the summer, shred in the winter",
-      icon: "🏂",
-      route: "/portfolio/personal/board",
+      title: "Media Portfolio",
+      description: "My works revolving flyers and video production",
+      icon: "🎥",
+      route: "/portfolio/personal/media",
     },
     {
       title: "Side Hustles",

@@ -22,7 +22,7 @@ import Personal from "./components/personal/personal";
 import Soccer from "./components/personal/soccer/soccer";
 import Dance from "./components/personal/dance/dance";
 import Side from "./components/personal/side/side";
-// import Board from "./components/personal/board/board";
+// import Media from "./components/personal/media/media";
 
 import "./transitions.css";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -61,7 +61,7 @@ function App() {
             <Route path="/portfolio/contact" element={<Contact />} />
             <Route path="/portfolio/personal/soccer" element={<Soccer />} />
             <Route path="/portfolio/personal/dance" element={<Dance />} />
-            {/* <Route path="/portfolio/personal/board" element={<Board />} /> */}
+            {/* <Route path="/portfolio/personal/media" element={<Media />} /> */}
             <Route path="/portfolio/personal/side" element={<Side />} />
           </Routes>
         </CSSTransition>
