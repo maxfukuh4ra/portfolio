@@ -69,6 +69,25 @@
   ],
   "personalProjects": [
     {
+      "title": "UCLA Ranked",
+      "imageSrc": "projects/uclaranked.png",
+      "description": "UCLA-based peer-driven ranking site, reaching 100+ users and boosting campus engagement with profile discovery and recognition",
+      "liveDemo": "https://uclaranked.com/",
+      "year": "2024",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Firebase",
+        "Express.js",
+        "PostgreSQL",
+        "Python",
+        "Selenium",
+        "AWS",
+        "BeautifulSoup"
+      ]
+    },
+    {
       "title": "PillPal",
       "imageSrc": "projects/pillpal.png",
       "description": "Full-stack mobile app that sends geolocation and time-based notifications to remind users to take their medications, track their medication intake, monitor adherence trends, and visualize health data.",
