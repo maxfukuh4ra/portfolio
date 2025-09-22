@@ -41,7 +41,7 @@ const Hero = () => {
         <div className={styles.experience}>
           <div className={styles.experienceItem}>
             <span className={styles.experienceIcon}>💼</span>
-            <span>Cybersecurity Engineer at EY</span>
+            <span>Prev. Software Engineer (Security) Intern at EY</span>
           </div>
           <div className={styles.experienceItem}>
             <span className={styles.experienceIcon}>🔬</span>
@@ -49,14 +49,19 @@ const Hero = () => {
           </div>
           <div className={styles.experienceItem}>
             <span className={styles.experienceIcon}>🎓</span>
-            <span>UCLA '26</span>
+            <span>UCLA Samueli School of Engineering '26</span>
           </div>
         </div>
 
         <div className={styles.buttons}>
-          <a href="/portfolio/contact" className={styles.contactBtn}>
-            Contact Me
-          </a>
+          <div className={styles.buttonRow}>
+            <a href="/portfolio/contact" className={styles.contactBtn}>
+              Contact Me
+            </a>
+            <a href="https://go.elpha.ai/8ZuA3Tp" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>
+              View Resume
+            </a>
+          </div>
           <p className={styles.status}> ◆ Available for Work</p>
         </div>
       </div>

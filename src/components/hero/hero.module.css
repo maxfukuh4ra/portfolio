@@ -120,9 +120,40 @@
   transform: translateY(-0.4rem);
 }
 
+.resumeBtn {
+  text-decoration: none;
+  background-color: #87CEEB;
+  color: var(--color-text);
+  border-radius: 2.8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.3em 3em;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  box-shadow: 0rem 0.5rem 0.9rem rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.resumeBtn:hover {
+  background-color: #4682B4;
+  box-shadow: 0rem 0.9rem 1.2rem rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transform: translateY(-0.4rem);
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -161,5 +192,14 @@
 
   .contactBtn {
     padding: 1em 2em;
+  }
+
+  .resumeBtn {
+    padding: 1em 2em;
+  }
+
+  .buttonRow {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
