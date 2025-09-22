@@ -48,23 +48,30 @@ const EducationSection = () => {
 
         {/* Right Side */}
         <div className={styles.educationRight}>
-          <h3>Current Coursework:</h3>
+          <h3>Relevant Coursework:</h3>
           <ul>
-            <li>CS 131 - Programming Languages</li>
             <li>CS 181 - Theory of Computing</li>
-            <li>CS 136 - Computer Security</li>
+            <li>CS 180 - Algorithms and Complexity</li>
+            <li>CS 163 - Deep Learning for Computer Vision</li>
             <li>CS M152A - Digital Design Laboratory</li>
-            <li>CS 118 - Computer Networks</li>
-            <li>CS 143 - Database Management System</li>
-            <li>CS 111 - Operating Systems Principles</li>
             <li>CS M148 - Data Science and Machine Learning</li>
+            <li>CS 143 - Database Management System</li>
+            <li>CS 136 - Computer Security</li>
+            <li>CS 131 - Programming Languages</li>
+            <li>CS 118 - Computer Network Fundamentals</li>
+            <li>EC ENGR M116C - Computer Systems Architecture</li>
+            <li>CS 111 - Operating Systems Principles</li>
+            <li>CS M51A - Digital Design Laboratory</li>
             <li>CS 35L - Software Construction Laboratory</li>
-            <li>CS M51A - Digital Design</li>
             <li>CS 33 - Computer Organization</li>
             <li>
               CS 31 & 32 - Intro to Computer Science and Objected Oriented
               Programming
             </li>
+            <li> MATH 170E: Introduction to Probability and Statistics </li>
+            <li> MATH 33A & 33B: Linear Algebra and Differential Equations </li>
+            <li> MATH 32A & 32B: Multivariable Calculus </li>
+            <li> MATH 31A & 31B: Calculus: Differential and Integration, Infinite Series </li>
           </ul>
         </div>
       </div>
