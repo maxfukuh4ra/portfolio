@@ -27,7 +27,11 @@
       "videos": [
         {
           "src": "about/bwalkdemo.mov",
-          "caption": "Enrollment and grade distribution features on Bruinwalk"
+          "caption": "Enrollment Distribution Feature: integrated UCLA API with internal backend API with live data via Kubernetes cronjob"
+        },
+        {
+          "src": "about/bwalkdemo.mov",
+          "caption": "Grade Distribution Feature: automatic quarterly updates and creation of new professors and courses, eliminating manual data entry"
         }
       ],
       "isFeatured": true
