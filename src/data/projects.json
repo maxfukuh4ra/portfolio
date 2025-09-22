@@ -61,7 +61,11 @@
       "videos": [
         {
           "src": "about/bsademo.mov",
-          "caption": "Filtering points and synchronized video playback"
+          "caption": "Login Flow + App Overview"
+        },
+        {
+          "src": "about/bsademo.mov",
+          "caption": "Simplified Tagging Tool: used for quick data delivery"
         }
       ],
       "isFeatured": true
