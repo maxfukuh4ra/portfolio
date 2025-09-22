@@ -3,6 +3,68 @@ import styles from "./projects.module.css";
 import projectsData from "../../data/projects.json";
 import { getImageUrl } from "../../utils";
 
+const VideoCarousel = ({ videos = [] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (!videos || videos.length === 0) return null;
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % videos.length);
+  };
+
+  const currentVideo = videos[currentIndex];
+
+  return (
+    <div className={styles.carouselContainer}>
+      <div className={styles.carouselVideoWrapper}>
+        <button
+          type="button"
+          className={`${styles.carouselArrow} ${styles.carouselArrowLeft}`}
+          onClick={handlePrev}
+          aria-label="Previous video"
+        >
+          ‹
+        </button>
+
+        <video
+          key={currentIndex}
+          className={styles.carouselVideo}
+          src={getImageUrl(currentVideo.src)}
+          controls
+          playsInline
+        />
+
+        <button
+          type="button"
+          className={`${styles.carouselArrow} ${styles.carouselArrowRight}`}
+          onClick={handleNext}
+          aria-label="Next video"
+        >
+          ›
+        </button>
+      </div>
+      {currentVideo.caption && (
+        <div className={styles.carouselCaption}>{currentVideo.caption}</div>
+      )}
+      {videos.length > 1 && (
+        <div className={styles.carouselDots}>
+          {videos.map((_, idx) => (
+            <span
+              key={idx}
+              className={`${styles.carouselDot} ${idx === currentIndex ? styles.carouselDotActive : ""}`}
+              onClick={() => setCurrentIndex(idx)}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const ProjectsPage = () => {
   const [featuredProjects, setFeaturedProjects] = useState([]);
   const [personalProjects, setPersonalProjects] = useState([]);
@@ -65,12 +127,21 @@ const ProjectsPage = () => {
           <div className={styles.featuredProjects}>
             {featuredProjects.map((project, index) => (
               <div key={index} className={styles.featuredProject}>
-                <div className={styles.featuredImageContainer}>
-                  <img
-                    src={getImageUrl(project.imageSrc)}
-                    alt={`${project.title} screenshot`}
-                    className={styles.featuredImage}
-                  />
+                <div className={styles.featuredMediaColumn}>
+                  <div className={styles.featuredImageContainer}>
+                    <img
+                      src={getImageUrl(project.imageSrc)}
+                      alt={`${project.title} screenshot`}
+                      className={styles.featuredImage}
+                    />
+                  </div>
+
+                  {/* Videos Carousel (Featured Only) - Left column under image */}
+                  {project.videos && project.videos.length > 0 && (
+                    <div className={styles.videoContainer}>
+                      <VideoCarousel videos={project.videos} />
+                    </div>
+                  )}
                 </div>
 
                 <div className={styles.featuredDetails}>
@@ -97,13 +168,8 @@ const ProjectsPage = () => {
                     </div>
                   )}
 
-                  {/* Video Demo Placeholder */}
-                  <div className={styles.videoContainer}>
-                    <div className={styles.videoPlaceholder}>
-                      <span className={styles.videoIcon}>🎥</span>
-                      <p>Video Demo Coming Soon</p>
-                    </div>
-                  </div>
+                  {/* Videos Carousel moved to left column */}
+
 
                   {/* Technologies */}
                   <div className={styles.technologies}>

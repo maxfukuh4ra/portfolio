@@ -79,6 +79,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.featuredMediaColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .featuredProject:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -161,6 +167,86 @@
 /* Video Container */
 .videoContainer {
   margin: 1.5rem 0;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.carouselVideoWrapper {
+  position: relative;
+  width: 100%;
+  background: #000;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+}
+
+.carouselVideo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carouselArrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carouselArrowLeft {
+  left: 0.625rem;
+}
+
+.carouselArrowRight {
+  right: 0.625rem;
+}
+
+.carouselCaption {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  text-align: center;
+  opacity: 0.9;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.carouselDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--color-border);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carouselDotActive {
+  background: var(--color-primary);
+  transform: scale(1.2);
 }
 
 .videoPlaceholder {

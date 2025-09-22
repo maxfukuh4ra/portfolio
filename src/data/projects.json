@@ -3,7 +3,7 @@
     {
       "title": "Bruinwalk.com",
       "imageSrc": "projects/bruinwalk.png",
-      "description": "Production-level contribution to UCLA's premier course review and professor rating platform. Worked on core features including course search optimization, user interface improvements, and backend performance enhancements.",
+      "description": "Production-level contribution to UCLA's official course + professor review and rating platform with over 62K users and 1M monthly views. Worked on core backend features including grade distribution pipeline, enrollment distribution pipeline, and more.",
       "liveDemo": "https://bruinwalk.com",
       "github": "https://github.com/bruinwalk",
       "year": "2024",
@@ -16,13 +16,20 @@
         "Kubernetes"
       ],
       "features": [
-        "Course search and filtering system",
-        "Professor rating and review functionality",
+        "Course, professor, and apartment search system",
+        "Enrollment distribution and availability display",
+        "Grade distribution data display",
+        "Rating and review functionality",
         "User authentication and profiles",
-        "Real-time data updates",
-        "Mobile-responsive design"
+        "Backed by automatic real-time data via Django and PostgreSQL",
+        "Mobile-responsive design with React, handling immense user traffic"
       ],
-      "videoDemo": "projects/bruinwalk-demo.mp4",
+      "videos": [
+        {
+          "src": "about/bwalkdemo.mov",
+          "caption": "Enrollment and grade distribution features on Bruinwalk"
+        }
+      ],
       "isFeatured": true
     },
     {
@@ -41,13 +48,18 @@
         "HTML"
       ],
       "features": [
-        "Advanced point filtering system",
+        "Advanced point filtering system for players, coaches, scouts",
         "Real-time video playback controls",
-        "Match data visualization",
-        "Coach-specific analytics dashboard",
+        "Match data visualization backed by data science team",
+        "Data acquisition specific site and tools",
         "Export and reporting functionality"
       ],
-      "videoDemo": "projects/tennis-demo.mp4",
+      "videos": [
+        {
+          "src": "about/bsademo.mov",
+          "caption": "Filtering points and synchronized video playback"
+        }
+      ],
       "isFeatured": true
     }
   ],
