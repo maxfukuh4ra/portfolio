@@ -11,7 +11,7 @@
 
 .sectionDescription {
   font-size: 1rem;
-  color: gray;
+  color: var(--text-medium-grey);
   margin: 0 auto 2rem auto;
   max-width: 800px;
   line-height: 1.6;
@@ -27,7 +27,7 @@
 }
 
 .danceCard {
-  background: #fff;
+  background: var(--surface-white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -51,12 +51,12 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1rem 0 0.5rem;
-  color: #222;
+  color: var(--text-dark-grey);
 }
 
 .danceDescription {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-medium-grey);
   margin: 0 1rem 1rem;
   white-space: pre-line;
 }
@@ -68,8 +68,8 @@
 }
 
 .danceLink {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  background-color: var(--blue-light);
+  color: var(--blue);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -77,8 +77,8 @@
 }
 
 .danceLink:hover {
-  background-color: var(--color-text);
-  color: var(--color-secondary);
+  background-color: var(--text-medium-grey);
+  color: var(--blue-light);
 }
 
 @media screen and (max-width: 768px) {

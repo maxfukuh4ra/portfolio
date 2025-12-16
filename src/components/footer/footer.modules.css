@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .footer {
-  color: #fff;
+  color: var(--white);
   padding: 1.5rem 0;
   text-align: center;
   display: flex;
@@ -17,5 +17,5 @@
 
 .footer p {
   font-size: 1rem;
-  color: #2d3e50;
+  color: var(--text-blue-grey);
 }

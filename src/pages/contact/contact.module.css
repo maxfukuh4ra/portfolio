@@ -16,7 +16,7 @@
 
 .text p {
   font-size: 1.25rem;
-  color: gray;
+  color: var(--text-medium-grey);
 }
 
 ul {
@@ -37,11 +37,11 @@ ul {
 }
 
 .link:hover {
-  background: #d5d4d6;
+  background: var(--grey-medium);
 }
 
 .link a {
-  color: var(--color-text);
+  color: var(--text-medium-grey);
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 500;
@@ -49,7 +49,7 @@ ul {
 }
 
 .link:hover a {
-  color: var(--color-text);
+  color: var(--text-medium-grey);
 }
 
 .link img {

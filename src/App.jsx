@@ -15,6 +15,7 @@ import CurrentlySection from "./components/about/currently/currently";
 import SkillsSection from "./components/about/skills/skills";
 import About from "./components/about/about";
 import ProjectsPage from "./pages/projects/projects";
+import Experience from "./pages/experience/experience";
 import Contact from "./pages/contact/contact";
 import Footer from "./components/footer/footer";
 
@@ -56,6 +57,7 @@ function App() {
             />
             <Route path="/portfolio/currently" element={<CurrentlySection />} />
             <Route path="/portfolio/skills" element={<SkillsSection />} />
+            <Route path="/portfolio/experience" element={<Experience />} />
             <Route path="/portfolio/projects" element={<ProjectsPage />} />
             <Route path="/portfolio/personal" element={<Personal />} />
             <Route path="/portfolio/contact" element={<Contact />} />

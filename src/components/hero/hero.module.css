@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: var(--color-text);
+  color: var(--text-medium-grey);
   z-index: 1;
 }
 
@@ -48,7 +48,7 @@
   font-size: 4.5rem;
   font-weight: 900;
   margin-bottom: 1rem;
-  color: var(--color-dark);
+  color: var(--text-black);
 }
 
 .tagline {
@@ -62,11 +62,11 @@
 }
 
 .taglineText {
-  color: var(--color-dark);
+  color: var(--text-black);
 }
 
 .taglineHighlight {
-  color: var(--color-primary);
+  color: var(--blue);
   font-weight: 500;
 }
 
@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--color-dark);
+  color: var(--text-black);
   font-size: 1rem;
 }
 
@@ -98,8 +98,8 @@
 
 .contactBtn {
   text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
+  background-color: var(--blue);
+  color: var(--text-medium-grey);
   border-radius: 2.8rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -114,16 +114,16 @@
 }
 
 .contactBtn:hover {
-  background-color: var(--color-dark);
+  background-color: var(--text-black);
   box-shadow: 0rem 0.9rem 1.2rem rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: var(--white);
   transform: translateY(-0.4rem);
 }
 
 .resumeBtn {
   text-decoration: none;
-  background-color: #87CEEB;
-  color: var(--color-text);
+  background-color: var(--blue-sky);
+  color: var(--text-medium-grey);
   border-radius: 2.8rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -138,9 +138,9 @@
 }
 
 .resumeBtn:hover {
-  background-color: #4682B4;
+  background-color: var(--blue-steel);
   box-shadow: 0rem 0.9rem 1.2rem rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: var(--white);
   transform: translateY(-0.4rem);
 }
 
@@ -161,7 +161,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4a7a51;
+  color: var(--green);
   margin-top: 1rem;
 }
 

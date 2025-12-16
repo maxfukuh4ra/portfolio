@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2em 1em;
-  color: #333;
+  color: var(--text-grey);
 }
 
 .title {
@@ -14,7 +14,7 @@
 
 .subtitle {
   font-size: 1.2em;
-  color: #555;
+  color: var(--text-medium-grey);
   margin-bottom: 1.5em;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--surface-white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5em;
@@ -55,7 +55,7 @@
 
 .cardDescription {
   font-size: 1em;
-  color: #666;
+  color: var(--text-light-grey);
 }
 
 @media screen and (max-width: 768px) {

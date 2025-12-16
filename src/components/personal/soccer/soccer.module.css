@@ -2,7 +2,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 2rem; 
+  padding: 2rem;
   color: #333;
 }
 
@@ -92,7 +92,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem; /* Space between items */
+  gap: 1.5rem;
+  /* Space between items */
 }
 
 .progressionItem {
@@ -129,11 +130,14 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .progressionRow {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally on the screen */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally on the screen */
   }
 
   .arrow {
-    transform: rotate(90deg); /* Rotate arrows to point upwards */
+    transform: rotate(90deg);
+    /* Rotate arrows to point upwards */
   }
 }

@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
 }
 
 .title {
@@ -10,7 +10,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--purple-blue) 0%, var(--purple) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -19,7 +19,7 @@
 .subtitle {
     font-size: 1.25rem;
     text-align: center;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     margin-bottom: 3rem;
     line-height: 1.6;
     opacity: 0.8;
@@ -28,11 +28,11 @@
 /* Tennis Section */
 .tennisSection {
     margin-bottom: 4rem;
-    background: var(--color-surface);
+    background: var(--surface-white);
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--border-grey);
 }
 
 .sectionHeader {
@@ -44,13 +44,13 @@
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
 }
 
 .sectionDescription {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     max-width: 800px;
     margin: 0 auto;
     opacity: 0.8;
@@ -77,7 +77,7 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    background: var(--color-surface);
+    background: var(--surface-white);
 }
 
 .carouselImage {
@@ -110,15 +110,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     z-index: 5;
 }
 
 .spinner {
     width: 40px;
     height: 40px;
-    border: 4px solid var(--color-border);
-    border-top: 4px solid var(--color-primary);
+    border: 4px solid var(--border-grey);
+    border-top: 4px solid var(--blue);
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin: 0 auto 1rem;
@@ -144,7 +144,7 @@
     left: 0;
     right: 0;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    color: white;
+    color: var(--white);
     padding: 1.5rem 1rem 1rem;
     text-align: center;
     font-size: 1rem;
@@ -163,7 +163,7 @@
 
 .progressFill {
     height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, var(--purple-blue), var(--purple));
     transition: width 0.1s linear;
 }
 
@@ -178,7 +178,7 @@
     height: 50px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-grey);
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
@@ -191,7 +191,7 @@
 }
 
 .carouselButton:hover {
-    background: white;
+    background: var(--white);
     transform: translateY(-50%) scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -258,7 +258,7 @@
 }
 
 .activeIndicator {
-    background: #667eea;
+    background: var(--purple-blue);
     transform: scale(1.2);
 }
 
@@ -266,17 +266,17 @@
 .tennisDetails {
     margin-top: 2rem;
     padding: 2rem;
-    background: var(--color-surface);
+    background: var(--surface-white);
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--border-grey);
 }
 
 .tennisDetails h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
 }
 
 .experienceList {
@@ -290,7 +290,7 @@
     position: relative;
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     opacity: 0.8;
 }
 
@@ -306,7 +306,7 @@
     justify-content: space-around;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--border-grey);
 }
 
 .statItem {
@@ -320,13 +320,13 @@
 .statNumber {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--blue);
     line-height: 1;
 }
 
 .statLabel {
     font-size: 0.9rem;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     opacity: 0.8;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -345,12 +345,12 @@
 }
 
 .hustleCard {
-    background: var(--color-surface);
+    background: var(--surface-white);
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--border-grey);
 }
 
 .hustleCard:hover {
@@ -368,19 +368,19 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
 }
 
 .hustleOrg {
     font-size: 1rem;
-    color: #667eea;
+    color: var(--purple-blue);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .hustleDuration {
     font-size: 0.9rem;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     margin-bottom: 1rem;
     font-style: italic;
     opacity: 0.7;
@@ -389,7 +389,7 @@
 .hustleDescription {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     margin-bottom: 1.5rem;
     opacity: 0.8;
 }
@@ -405,7 +405,7 @@
     position: relative;
     font-size: 0.9rem;
     line-height: 1.4;
-    color: var(--color-text);
+    color: var(--text-medium-grey);
     opacity: 0.8;
 }
 
@@ -413,15 +413,15 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: var(--purple-blue);
     font-weight: bold;
 }
 
 /* Call to Action Section */
 .ctaSection {
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--purple-blue) 0%, var(--purple) 100%);
+    color: var(--white);
     padding: 3rem 2rem;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -442,8 +442,8 @@
 
 .ctaButton {
     display: inline-block;
-    background: white;
-    color: #667eea;
+    background: var(--white);
+    color: var(--purple-blue);
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -456,7 +456,7 @@
 .ctaButton:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    background: #f8f9fa;
+    background: var(--background-light);
 }
 
 /* Responsive Design */

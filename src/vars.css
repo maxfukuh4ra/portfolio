@@ -1,22 +1,96 @@
 :root {
   /* Light Theme (Default) */
-  --color-text: #555;
-  --color-primary: #5da3fa;
-  --color-secondary: #e1effd;
-  --color-dark: #000000;
-  --color-bg: #f3f9ff;
-  --color-surface: #ffffff;
-  --color-border: #e1e5e9;
+
+  /* Basic Colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Background Colors */
+  --background-white: #f3f9ff;
+  --background-light: #f8f9fa;
+
+  /* Surface Colors */
+  --surface-white: #ffffff;
+
+  /* Text Colors */
+  --text-black: #000000;
+  --text-dark-grey: #222;
+  --text-grey: #333;
+  --text-medium-grey: #555;
+  --text-light-grey: #666;
+  --text-blue-grey: #2d3e50;
+
+  /* Blue Colors */
+  --blue: #5da3fa;
+  --blue-dark: #2c5aa0;
+  --blue-steel: #4682B4;
+  --blue-sky: #87CEEB;
+  --blue-link: #0073e6;
+  --blue-light: #e1effd;
+  --blue-indigo: #4f46e5;
+
+  /* Purple/Blue Gradient Colors */
+  --purple-blue: #667eea;
+  --purple: #764ba2;
+
+  /* Grey Colors */
+  --grey-light: #e1e5e9;
+  --grey-medium: #d5d4d6;
+  --grey-border: #d0d0d0;
+
+  /* Other Colors */
+  --green: #4a7a51;
+
+  /* Border Colors */
+  --border-grey: #e1e5e9;
+
+  /* Font */
   --font: "Roboto";
 }
 
 [data-theme="dark"] {
   /* Dark Theme */
-  --color-text: #e1e5e9;
-  --color-primary: #5da3fa;
-  --color-secondary: #1a2332;
-  --color-dark: #ffffff;
-  --color-bg: #0f1419;
-  --color-surface: #1a2332;
-  --color-border: #2d3748;
+
+  /* Basic Colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Background Colors */
+  --background-white: #0f1419;
+  --background-light: #1a2332;
+
+  /* Surface Colors */
+  --surface-white: #1a2332;
+
+  /* Text Colors */
+  --text-black: #ffffff;
+  --text-dark-grey: #e1e5e9;
+  --text-grey: #e1e5e9;
+  --text-medium-grey: #e1e5e9;
+  --text-light-grey: #e1e5e9;
+  --text-blue-grey: #e1e5e9;
+
+  /* Blue Colors */
+  --blue: #5da3fa;
+  --blue-dark: #2c5aa0;
+  --blue-steel: #4682B4;
+  --blue-sky: #87CEEB;
+  --blue-link: #0073e6;
+  --blue-light: #1a2332;
+  --blue-indigo: #4f46e5;
+
+  /* Purple/Blue Gradient Colors */
+  --purple-blue: #667eea;
+  --purple: #764ba2;
+
+  /* Grey Colors */
+  --grey-light: #2d3748;
+  --grey-medium: #2d3748;
+  --grey-border: #2d3748;
+
+  /* Other Colors */
+  --green: #4a7a51;
+
+  /* Border Colors */
+  --border-grey: #2d3748;
 }

@@ -15,7 +15,7 @@
 }
 
 .subtitle {
-  color: #555;
+  color: var(--text-medium-grey);
   font-size: 0.95rem;
   margin-bottom: 2rem;
 }
@@ -50,5 +50,5 @@
 .skillName {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #222;
+  color: var(--text-dark-grey);
 }
