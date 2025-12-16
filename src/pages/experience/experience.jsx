@@ -34,7 +34,33 @@ const Experience = () => {
                                     className={styles.workLogo}
                                 />
                                 <div>
-                                    <h3 className={styles.orgName}>{job.organisation}</h3>
+                                    <div className={styles.orgNameContainer}>
+                                        <h3 className={styles.orgName}>{job.organisation}</h3>
+                                        {job.link && (
+                                            <a
+                                                href={job.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={styles.externalLink}
+                                                aria-label={`Visit ${job.organisation} website`}
+                                            >
+                                                <svg
+                                                    width="14"
+                                                    height="14"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                >
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                </svg>
+                                            </a>
+                                        )}
+                                    </div>
                                     <p className={styles.role}>{job.role}</p>
                                 </div>
                             </div>

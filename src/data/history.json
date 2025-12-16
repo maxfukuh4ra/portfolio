@@ -1,10 +1,23 @@
 [
   {
+    "role": "Software Engineer Intern",
+    "organisation": "Microsoft",
+    "location": "Cambridge, MA",
+    "startDate": "Spring 26",
+    "endDate": "Spring 26",
+    "link": "https://www.microsoft.com",
+    "experiences": [
+      "Incoming @ Microsoft Intune Team"
+    ],
+    "imageSrc": "work/msft.png"
+  },
+  {
     "role": "Software Engineer Intern -- Cybersecurity",
     "organisation": "Ernst and Young (EY)",
     "location": "Irvine, CA",
     "startDate": "Jun. 2025",
     "endDate": "Aug. 2025",
+    "link": "https://www.ey.com",
     "experiences": [
       "Engineered Python automation in Splunk SOAR to investigate malicious IPs and create ServiceNow tickets, reducing manual triage time by 35%",
       "Analyzed ~125 security incidents using deep-packet inspection, TCP/IP, and network traffic heuristics to support triage and incident response",
@@ -18,6 +31,7 @@
     "location": "Los Angeles, CA",
     "startDate": "Oct. 2024",
     "endDate": "Present",
+    "link": "https://uclastudentmedia.com/",
     "experiences": [
       "Maintained bruinwalk.com, UCLA’s official professor/course rating service, serving over 62,000 users and 730,000 monthly views",
       "Developed and deployed a new feature to display live enrollment distributions and class availability utilizing Python and PostgreSQL"
@@ -30,6 +44,7 @@
     "location": "Los Angeles, CA",
     "startDate": "Oct. 2024",
     "endDate": "Present",
+    "link": "https://www.bruinsportsanalytics.com/",
     "experiences": [
       "Developed a data-driven Filterable Match Viewer web app for UCLA Division 1 Men’s Tennis team using Next.js and Firebase",
       "Enhanced internal tagging tool, increasing reporting efficiency by 40%, serving as a critical resource for 30+ D1 student athletes"
@@ -42,6 +57,7 @@
     "location": "Los Angeles, CA",
     "startDate": "Oct. 2024",
     "endDate": "Mar. 2025",
+    "link": "https://dailybruin.com/",
     "experiences": [
       "Built interactive and dynamic web pages for UCLA's largest and official student newspaper, using React and AWS deployment",
       "Collaborated with the design team to create visually appealing user interfaces, enhancing the reader experience and monthly traffic"
@@ -49,23 +65,12 @@
     "imageSrc": "work/db.png"
   },
   {
-    "role": "Software Engineer Intern",
-    "organisation": "Taskformer",
-    "location": "Austin, TX",
-    "startDate": "Aug. 2024",
-    "endDate": "Oct. 2024",
-    "experiences": [
-      "Generated a college counselor chatbot using BotPress that provides general advice and edit suggestions on college essay writing",
-      "Engineered a Python automated cold outreach system increasing efficiency by 80%: utilized Selenium ChromeDriver to access provided LinkedIn profiles, BS4 to scrape, OpenAI API to generate message, Google API to automate sending emails"
-    ],
-    "imageSrc": "work/tf.png"
-  },
-  {
     "role": "Multimedia Producer",
     "organisation": "Samahang Modern",
     "location": "Los Angeles, CA",
     "startDate": "Jan. 2023",
     "endDate": "Jun. 2024",
+    "link": "https://www.instagram.com/samahangmodern/?hl=en",
     "experiences": [
       "Led a team of 40+ competitive dancers through 6 hours practices; awarded 1st at Spring Sing and Maxt Out Dance Competition",
       "Increased Instagram followers to 2200+ with professional quality flyers, video filming & editing garnering 440,000+ views"
@@ -78,6 +83,7 @@
     "location": "New York, NY",
     "startDate": "Aug. 2023",
     "endDate": "Sept. 2024",
+    "link": "https://www.usopen.org/",
     "experiences": [],
     "imageSrc": "work/usopen.svg"
   },
@@ -87,6 +93,7 @@
     "location": "Tokyo, JP",
     "startDate": "Aug. 2023",
     "endDate": "Sept. 2023",
+    "link": "https://en.skydrive2020.com/",
     "experiences": [],
     "imageSrc": "work/skydrive.png"
   },
@@ -96,6 +103,7 @@
     "location": "Tokyo, JP",
     "startDate": "Jun. 2023",
     "endDate": "Aug. 2023",
+    "link": "https://burton.com/",
     "experiences": [],
     "imageSrc": "work/burton.png"
   }
