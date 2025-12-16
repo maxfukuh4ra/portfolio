@@ -17,7 +17,7 @@ const EducationSection = () => {
               <h3>University of California, Los Angeles (UCLA)</h3>
               <p>Bachelor of Science in Computer Science</p>
               <p>2022-2026</p>
-              <p>GPA 3.7</p>
+              <p>GPA 3.6</p>
               <ul>
                 <li>Technical Breadth in Technology Management</li>
                 <li>Scientific Breadth in Psychology</li>

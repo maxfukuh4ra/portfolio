@@ -10,12 +10,12 @@
 }
 
 .text h2 {
-  font-size: 3.75rem;   
+  font-size: 3.75rem;
   font-weight: 600;
 }
 
 .text p {
-  font-size: 1.25rem;   
+  font-size: 1.25rem;
   color: gray;
 }
 
@@ -37,7 +37,7 @@ ul {
 }
 
 .link:hover {
-  background: #d5d4d6; 
+  background: #d5d4d6;
 }
 
 .link a {
@@ -64,14 +64,14 @@ ul {
   }
 
   .text h2 {
-    font-size: 2.8125rem; 
+    font-size: 2.8125rem;
   }
 
   .text p {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
   }
 
   .link a {
-    font-size: 1rem;   
+    font-size: 1rem;
   }
 }

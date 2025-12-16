@@ -68,6 +68,9 @@
 
 .menuItems a.active {
   font-weight: 700;
+  color: #87CEEB;
+  border: 0.125rem dashed #87CEEB;
+  border-radius: 0.5rem;
 }
 
 
