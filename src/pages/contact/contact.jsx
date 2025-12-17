@@ -17,7 +17,7 @@ const Contact = () => {
   const TEMPLATE_ID = "template_stu4k5o";
   const PUBLIC_KEY = "5JdtBHHlCbBWqxZau";
 
-  // Initialize EmailJS
+  // init EmailJS
   useEffect(() => {
     emailjs.init(PUBLIC_KEY);
   }, []);
@@ -54,7 +54,7 @@ const Contact = () => {
       console.error("EmailJS error:", error);
       setSubmitStatus("error");
 
-      // Show more detailed error message
+      // error msg
       if (error.text) {
         setErrorMessage(error.text);
       } else if (error.message) {

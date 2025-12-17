@@ -16,6 +16,7 @@ import ProjectsPage from "./pages/projects/projects";
 import Experience from "./pages/experience/experience";
 import Background from "./pages/background/background";
 import Contact from "./pages/contact/contact";
+import Resume from "./pages/resume/resume";
 import Footer from "./components/footer/footer";
 
 import Personal from "./components/personal/personal";
@@ -51,6 +52,7 @@ function App() {
             <Route path="/portfolio/background" element={<Background />} />
             <Route path="/portfolio/projects" element={<ProjectsPage />} />
             <Route path="/portfolio/personal" element={<Personal />} />
+            <Route path="/portfolio/resume" element={<Resume />} />
             <Route path="/portfolio/contact" element={<Contact />} />
             <Route path="/portfolio/personal/soccer" element={<Soccer />} />
             <Route path="/portfolio/personal/dance" element={<Dance />} />

@@ -1,0 +1,169 @@
+@import "../../vars.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--grey-border);
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--text-medium-grey);
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.zoomControls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--surface-white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-border);
+}
+
+.zoomButton {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--blue);
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.3s;
+    min-width: 2rem;
+}
+
+.zoomButton:hover:not(:disabled) {
+    color: var(--blue-dark);
+}
+
+.zoomButton:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.zoomLevel {
+    font-size: 0.9rem;
+    color: var(--text-medium-grey);
+    min-width: 3rem;
+    text-align: center;
+}
+
+.viewerContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--surface-white);
+    border: 1px solid var(--grey-border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pdfWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.pdfViewer {
+    width: 100%;
+    min-height: 800px;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    border-top: 1px solid var(--grey-border);
+}
+
+.downloadButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-family: inherit;
+}
+
+.downloadButton:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px);
+}
+
+.downloadButton svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .viewerContainer {
+        padding: 1rem;
+    }
+
+    .pdfViewer {
+        min-height: 600px;
+    }
+}

@@ -78,6 +78,16 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/portfolio/resume"
+              className={
+                location.pathname === "/portfolio/resume" ? styles.active : ""
+              }
+            >
+              resume
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/portfolio/contact"
               className={
                 location.pathname === "/portfolio/contact" ? styles.active : ""
