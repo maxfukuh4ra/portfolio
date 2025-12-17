@@ -5,7 +5,6 @@
   bottom: 0;
   width: 20rem;
   background: var(--surface-white);
-  border-right: 0.25rem solid var(--blue);
   padding: 6rem 1.5rem 2rem;
   overflow-y: auto;
   z-index: 50;

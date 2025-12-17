@@ -9,14 +9,9 @@ export const sidebarConfig = {
     },
     music: {
         lastfm: {
-            username: "your-lastfm-username", // Replace with your Last.fm username
-            apiKey: "your-lastfm-api-key", // Get from https://www.last.fm/api/account/create
-        },
-        // Alternative: If you use Spotify, you can configure it here
-        // spotify: {
-        //   clientId: "your-spotify-client-id",
-        //   clientSecret: "your-spotify-client-secret",
-        // },
+            username: "maxfukuh4ra",
+            apiKey: "f1096b1738c917a48f2798bcb6cf988d",
+        }
     },
     calendar: {
         // Google Calendar API setup required

@@ -8,71 +8,106 @@ const MusicListening = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const username = sidebarConfig.music.lastfm.username;
-        const apiKey = sidebarConfig.music.lastfm.apiKey;
+        const appleMusicEnabled = sidebarConfig.music.appleMusic?.enabled;
+        const appleMusicEndpoint = sidebarConfig.music.appleMusic?.apiEndpoint;
+        const lastfmUsername = sidebarConfig.music.lastfm?.username;
+        const lastfmApiKey = sidebarConfig.music.lastfm?.apiKey;
 
-        // Skip if not configured
-        if (!username || username === "your-lastfm-username" || !apiKey || apiKey === "your-lastfm-api-key") {
-            setLoading(false);
-            setError("Please configure Last.fm in src/config/sidebarConfig.js");
-            return;
-        }
+        // Try Apple Music first if enabled
+        if (appleMusicEnabled && appleMusicEndpoint) {
+            const fetchAppleMusic = async () => {
+                try {
+                    const response = await fetch(appleMusicEndpoint);
 
-        const fetchNowPlaying = async () => {
-            try {
-                const response = await fetch(
-                    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`
-                );
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch Apple Music data");
+                    }
 
-                if (!response.ok) {
-                    throw new Error("Failed to fetch music data");
-                }
+                    const data = await response.json();
 
-                const data = await response.json();
-
-                if (data.recenttracks?.track) {
-                    const recentTrack = Array.isArray(data.recenttracks.track)
-                        ? data.recenttracks.track[0]
-                        : data.recenttracks.track;
-
-                    // Check if currently playing (has @attr.nowplaying)
-                    if (recentTrack["@attr"]?.nowplaying === "true") {
+                    if (data.attributes) {
+                        // Apple Music API response format
                         setTrack({
-                            artist: recentTrack.artist["#text"] || recentTrack.artist,
-                            name: recentTrack.name,
-                            isPlaying: true,
+                            artist: data.attributes.artistName || "Unknown Artist",
+                            name: data.attributes.name || "Unknown Track",
+                            isPlaying: data.attributes.playParams?.isLibrary || false,
+                        });
+                    } else if (data.data?.[0]) {
+                        // Alternative response format
+                        const trackData = data.data[0];
+                        setTrack({
+                            artist: trackData.attributes?.artistName || "Unknown Artist",
+                            name: trackData.attributes?.name || "Unknown Track",
+                            isPlaying: true, // Recent tracks are typically playing
                         });
                     } else {
-                        // Show most recent track
-                        setTrack({
-                            artist: recentTrack.artist["#text"] || recentTrack.artist,
-                            name: recentTrack.name,
-                            isPlaying: false,
-                        });
+                        throw new Error("No track data in response");
                     }
-                } else {
-                    throw new Error("No track data found");
+                } catch (err) {
+                    console.error("Error fetching Apple Music:", err);
+                    setError("Unable to load Apple Music");
+                } finally {
+                    setLoading(false);
                 }
-            } catch (err) {
-                console.error("Error fetching music data:", err);
-                setError(err.message);
-                // Set fallback for development
-                setTrack({
-                    artist: "not scrobbling",
-                    name: "enable last.fm scrobbling",
-                    isPlaying: false,
-                });
-            } finally {
-                setLoading(false);
-            }
-        };
+            };
 
-        fetchNowPlaying();
+            fetchAppleMusic();
+            const interval = setInterval(fetchAppleMusic, 30000);
+            return () => clearInterval(interval);
+        }
+        // Fallback to Last.fm if configured
+        else if (lastfmUsername && lastfmApiKey && 
+                 lastfmUsername !== "your-lastfm-username" && 
+                 lastfmApiKey !== "your-lastfm-api-key") {
+            const fetchLastFm = async () => {
+                try {
+                    const response = await fetch(
+                        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${lastfmUsername}&api_key=${lastfmApiKey}&format=json&limit=1`
+                    );
 
-        // Poll every 30 seconds for updates
-        const interval = setInterval(fetchNowPlaying, 30000);
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch music data");
+                    }
 
-        return () => clearInterval(interval);
+                    const data = await response.json();
+
+                    if (data.recenttracks?.track) {
+                        const recentTrack = Array.isArray(data.recenttracks.track)
+                            ? data.recenttracks.track[0]
+                            : data.recenttracks.track;
+
+                        if (recentTrack["@attr"]?.nowplaying === "true") {
+                            setTrack({
+                                artist: recentTrack.artist["#text"] || recentTrack.artist,
+                                name: recentTrack.name,
+                                isPlaying: true,
+                            });
+                        } else {
+                            setTrack({
+                                artist: recentTrack.artist["#text"] || recentTrack.artist,
+                                name: recentTrack.name,
+                                isPlaying: false,
+                            });
+                        }
+                    } else {
+                        throw new Error("No track data found");
+                    }
+                } catch (err) {
+                    console.error("Error fetching Last.fm data:", err);
+                    setError("Unable to load");
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            fetchLastFm();
+            const interval = setInterval(fetchLastFm, 30000);
+            return () => clearInterval(interval);
+        } else {
+            // No music service configured
+            setLoading(false);
+            setError("configure music api");
+        }
     }, []);
 
     return (
