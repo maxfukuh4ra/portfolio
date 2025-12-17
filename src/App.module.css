@@ -8,7 +8,8 @@
 }
 
 .mainContent {
-  margin-left: 20rem; /* Match sidebar width */
+  margin-left: 20rem;
+  /* Match sidebar width */
   min-height: 100vh;
   transition: margin-left 0.3s ease;
 }
