@@ -57,14 +57,14 @@
 }
 
 .categoryButton.active {
-    background: #ff6b35;
-    border-color: #ff6b35;
+    background: var(--blue);
+    border-color: var(--blue);
     color: var(--white);
 }
 
 .categoryButton.active:hover {
-    background: #e55a2b;
-    border-color: #e55a2b;
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
 }
 
 .skillsGrid {
@@ -97,7 +97,7 @@
 .skillName {
     font-size: 0.95rem;
     font-weight: 500;
-    color: #ff6b35;
+    color: var(--blue);
     text-align: center;
     text-transform: lowercase;
 }
