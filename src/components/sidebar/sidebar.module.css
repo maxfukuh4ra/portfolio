@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20rem;
+  background: var(--surface-white);
+  border-right: 0.25rem solid var(--blue);
+  padding: 6rem 1.5rem 2rem;
+  overflow-y: auto;
+  z-index: 50;
+  box-shadow: 0.125rem 0 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--border-grey);
+  border-radius: 0.25rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--grey-medium);
+}
+
+/* Responsive - hide on mobile */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
+

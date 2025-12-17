@@ -8,6 +8,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import styles from "./App.module.css";
 import Navbar from "./components/navbar/navbar";
+import Sidebar from "./components/sidebar/sidebar";
 import Hero from "./components/hero/hero";
 import CurrentlySection from "./components/about/currently/currently";
 import About from "./components/about/about";
@@ -34,9 +35,11 @@ function App() {
   return (
     <div className={styles.App}>
       <Navbar />
-      <TransitionGroup>
-        <CSSTransition key={location.pathname} timeout={1200} classNames="fade">
-          <Routes location={location}>
+      <Sidebar />
+      <div className={styles.mainContent}>
+        <TransitionGroup>
+          <CSSTransition key={location.pathname} timeout={1200} classNames="fade">
+            <Routes location={location}>
             <Route
               path="/portfolio"
               element={
@@ -58,9 +61,10 @@ function App() {
             <Route path="/portfolio/personal/dance" element={<Dance />} />
             {/* <Route path="/portfolio/personal/media" element={<Media />} /> */}
             <Route path="/portfolio/personal/side" element={<Side />} />
-          </Routes>
-        </CSSTransition>
-      </TransitionGroup>
+            </Routes>
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
       <Footer />
     </div>
   );
