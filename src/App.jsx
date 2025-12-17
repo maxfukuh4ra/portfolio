@@ -5,10 +5,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { useState } from "react";
 
 import styles from "./App.module.css";
-import Loading from "./components/loading/loading";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import CurrentlySection from "./components/about/currently/currently";
@@ -16,6 +14,7 @@ import SkillsSection from "./components/about/skills/skills";
 import About from "./components/about/about";
 import ProjectsPage from "./pages/projects/projects";
 import Experience from "./pages/experience/experience";
+import Background from "./pages/background/background";
 import Contact from "./pages/contact/contact";
 import Footer from "./components/footer/footer";
 
@@ -30,15 +29,6 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   const location = useLocation();
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
-  if (isLoading) {
-    return <Loading onComplete={handleLoadingComplete} />;
-  }
 
   return (
     <div className={styles.App}>
@@ -58,6 +48,7 @@ function App() {
             <Route path="/portfolio/currently" element={<CurrentlySection />} />
             <Route path="/portfolio/skills" element={<SkillsSection />} />
             <Route path="/portfolio/experience" element={<Experience />} />
+            <Route path="/portfolio/background" element={<Background />} />
             <Route path="/portfolio/projects" element={<ProjectsPage />} />
             <Route path="/portfolio/personal" element={<Personal />} />
             <Route path="/portfolio/contact" element={<Contact />} />

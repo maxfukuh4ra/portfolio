@@ -1,12 +1,40 @@
 .dancePageContainer {
-  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   text-align: center;
+  position: relative;
+}
+
+.backButton {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: transparent;
+  border: 2px dotted var(--blue);
+  font-size: 1rem;
+  color: var(--blue);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backButton:hover {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  border-color: var(--blue-dark);
 }
 
 .sectionTitle {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: var(--black);
 }
 
 .sectionDescription {

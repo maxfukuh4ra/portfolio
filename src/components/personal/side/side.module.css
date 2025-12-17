@@ -3,6 +3,32 @@
     margin: 0 auto;
     padding: 2rem 1rem;
     color: var(--text-medium-grey);
+    position: relative;
+}
+
+.backButton {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: transparent;
+    border: 2px dotted var(--blue);
+    font-size: 1rem;
+    color: var(--blue);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.backButton:hover {
+    background: var(--blue-light);
+    color: var(--blue-dark);
+    border-color: var(--blue-dark);
 }
 
 .title {
@@ -10,10 +36,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--purple-blue) 0%, var(--purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--black);
 }
 
 .subtitle {

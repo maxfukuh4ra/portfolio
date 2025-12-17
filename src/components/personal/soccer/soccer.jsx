@@ -1,64 +1,69 @@
 import React from "react";
-import styles from "./Soccer.module.css";
+import { useNavigate } from "react-router-dom";
+import styles from "./soccer.module.css";
 import { getImageUrl } from "../../../utils";
 
 const Soccer = () => {
+  const navigate = useNavigate();
   const highlights = [
     {
-      title: "U19 MLS NEXT Highlights",
+      title: "u19 mls next highlights",
       videoId: "EEobwtfKncI",
       url: "https://youtu.be/EEobwtfKncI?si=E-ZUh6S2tA-kRr6f",
       description:
-        "MLS NEXT FLEX Southwest Conference Champion (Record: 9-1-1)",
+        "mls next flex southwest conference champion (record: 9-1-1)",
     },
     {
-      title: "U17 ECNL & High School Highlights",
+      title: "u17 ecnl & high school highlights",
       videoId: "dTtUdHJ5PsY",
       url: "https://youtu.be/dTtUdHJ5PsY?si=0RnCetoD7qfFUm5i",
       description:
-        "2021 ECNL National Playoff Semifinalist. \n Runner-up 2021 Surf Cup Best of the Best Division",
+        "2021 ecnl national playoff semifinalist. \n runner-up 2021 surf cup best of the best division",
     },
     {
-      title: "U16 Highlights",
+      title: "u16 highlights",
       videoId: "_qjHEvz6C3A",
       url: "https://youtu.be/_qjHEvz6C3A?si=2_H0kLzEd5TlF3XJ",
       description:
-        "Highschool + DA (gap year). All games started, full minutes played on varsity. U16 DA gap year season cut short due to COVID",
+        "highschool + da (gap year). all games started, full minutes played on varsity. u16 da gap year season cut short due to covid",
     },
   ];
 
   const progression = [
     {
-      title: "National Premier Leagues",
+      title: "national premier leagues",
       imgSrc: getImageUrl("soccer/npl.avif"),
     },
     {
-      title: "High School Varsity",
+      title: "high school varsity",
       imgSrc: getImageUrl("soccer/beckman.png"),
     },
     {
-      title: "USSDA",
+      title: "ussda",
       imgSrc: getImageUrl("soccer/da.png"),
     },
     {
-      title: "ECNL",
+      title: "ecnl",
       imgSrc: getImageUrl("soccer/ecnl.png"),
     },
     {
-      title: "MLS NEXT",
+      title: "mls next",
       imgSrc: getImageUrl("soccer/mlsnext.png"),
     },
   ];
 
   return (
     <div className={styles.container}>
+      <button className={styles.backButton} onClick={() => navigate("/portfolio/personal")}>
+        ← back
+      </button>
       {/* Hero Section */}
       <div className={styles.hero}>
-        <h1 className={styles.title}>Soccer Highlights</h1>
+        <h1 className={styles.title}>soccer highlights</h1>
         <p className={styles.subtitle}>
-          As someone who only started club soccer in 2018, climbing up to the
-          top rank in the US Youth Soccer pyramid was a challenge, but I'm proud
-          of what I've accomplished.<br /> Here are some of my highlights from my
+          as someone who only started club soccer in 2018, climbing up to the
+          top rank in the us youth soccer pyramid was a challenge, but i'm proud
+          of what i've accomplished.<br /> here are some of my highlights from my
           prime:
         </p>
       </div>
@@ -87,7 +92,7 @@ const Soccer = () => {
 
       {/* Progression Section */}
       <div className={styles.progression}>
-        <h2 className={styles.progressionHeading}>League Progression</h2>
+        <h2 className={styles.progressionHeading}>league progression</h2>
         <div className={styles.progressionRow}>
           {progression.map((league, index) => (
             <React.Fragment key={index}>

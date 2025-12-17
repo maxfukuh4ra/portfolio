@@ -2,8 +2,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   color: #333;
+  position: relative;
 }
 
 /* Hero section */
@@ -12,10 +15,34 @@
   margin-bottom: 2rem;
 }
 
+.backButton {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: transparent;
+  border: 2px dotted var(--blue);
+  font-size: 1rem;
+  color: var(--blue);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backButton:hover {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #222;
+  color: var(--black);
   margin-bottom: 0.5rem;
 }
 
@@ -39,7 +66,8 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 320px;
+  width: 350px;
+  padding: 1.5rem;
   text-align: center;
   transition:
     transform 0.3s,
@@ -58,20 +86,23 @@
 .thumbnail {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .linkTitle {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: #0073e6;
+  padding: 0 0.5rem;
 }
 
 .linkDescription {
   font-size: 1rem;
   color: #555;
   white-space: pre-line;
+  padding: 0 0.5rem;
+  line-height: 1.5;
 }
 
 /* Progression Section */

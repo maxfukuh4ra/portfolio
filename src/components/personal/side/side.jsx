@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./side.module.css";
 import { getImageUrl } from "../../../utils";
 import tennisData from "../../../data/tennis.json";
 
 const Side = () => {
+  const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -16,39 +18,39 @@ const Side = () => {
 
   const sideHustles = [
     {
-      title: "US Open Tennis Coordinator",
-      organization: "USTA",
+      title: "us open tennis coordinator",
+      organization: "usta",
       duration: "3 years (2021-2023)",
-      description: "Coordinated player interviews, managed tournament logistics, and ensured smooth operations during one of tennis's biggest events.",
+      description: "coordinated player interviews, managed tournament logistics, and ensured smooth operations during one of tennis's biggest events.",
       highlights: [
-        "Managed player interview schedules and logistics",
-        "Coordinated with media teams and tournament officials",
-        "Ensured smooth player movement and tournament flow",
-        "Worked directly with top-ranked ATP and WTA players"
+        "managed player interview schedules and logistics",
+        "coordinated with media teams and tournament officials",
+        "ensured smooth player movement and tournament flow",
+        "worked directly with top-ranked atp and wta players"
       ],
       icon: "🎾"
     },
     {
-      title: "Multimedia Producer",
-      organization: "Samahang Modern",
+      title: "multimedia producer",
+      organization: "samahang modern",
       duration: "2023-2024",
-      description: "Curating digital identity for #1 collegiate dance team on Instagram and YouTube",
+      description: "curating digital identity for #1 collegiate dance team on instagram and youtube",
       highlights: [
-        "Produced professional quality multimedia content with Adobe Creative Suite",
-        "Grew Instagram to 2200+ followers and 440K+ views with flyers and concept videos"
+        "produced professional quality multimedia content with adobe creative suite",
+        "grew instagram to 2200+ followers and 440k+ views with flyers and concept videos"
       ],
       icon: "💻"
     },
     {
-      title: "Soccer Coaching",
-      organization: "Lezele FC",
+      title: "soccer coaching",
+      organization: "lezele fc",
       duration: "2018-2022",
-      description: "Teaching soccer fundamentals to beginners and intermediate players of all ages.",
+      description: "teaching soccer fundamentals to beginners and intermediate players of all ages.",
       highlights: [
-        "Individual and group lesson instruction",
-        "Technique development and match strategy",
-        "Junior development program coordination",
-        "Tournament preparation and mental game coaching"
+        "individual and group lesson instruction",
+        "technique development and match strategy",
+        "junior development program coordination",
+        "tournament preparation and mental game coaching"
       ],
       icon: "🏆"
     }
@@ -153,18 +155,21 @@ const Side = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Side Hustles & Adventures</h1>
+      <button className={styles.backButton} onClick={() => navigate("/portfolio/personal")}>
+        ← back
+      </button>
+      <h1 className={styles.title}>side hustles & adventures</h1>
       <p className={styles.subtitle}>
-        Beyond my main work revolving tech, I've had some incredible opportunities gain unique experiences.
+        beyond my main work revolving tech, i've had some incredible opportunities gain unique experiences.
       </p>
 
       {/* Tennis Section */}
       <section className={styles.tennisSection}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>US Open Tennis Experience</h2>
+          <h2 className={styles.sectionTitle}>us open tennis experience</h2>
           <p className={styles.sectionDescription}>
-            For three consecutive years, I had the incredible opportunity to work as a coordinator at the US Open Tennis Championships.
-            This experience gave me a behind-the-scenes look at one of tennis's most prestigious tournaments, where I got to work directly
+            for three consecutive years, i had the incredible opportunity to work as a coordinator at the us open tennis championships.
+            this experience gave me a behind-the-scenes look at one of tennis's most prestigious tournaments, where i got to work directly
             with top-ranked players, coordinate media operations, and ensure the smooth flow of one of the world's biggest sporting events.
           </p>
         </div>
@@ -192,7 +197,7 @@ const Side = () => {
               {imageLoading && (
                 <div className={styles.imageLoader}>
                   <div className={styles.spinner}></div>
-                  <p>Loading image...</p>
+                  <p>loading image...</p>
                 </div>
               )}
               <img
@@ -255,7 +260,7 @@ const Side = () => {
 
         {/* Tennis Experience Details */}
         <div className={styles.tennisDetails}>
-          <h3>What I Did as an Assistant Producer:</h3>
+          <h3>what i did as an assistant producer:</h3>
           <ul className={styles.experienceList}>
             {tennisExperience.highlights.map((highlight, index) => (
               <li key={index}>{highlight}</li>
@@ -265,15 +270,15 @@ const Side = () => {
           <div className={styles.tennisStats}>
             <div className={styles.statItem}>
               <span className={styles.statNumber}>3</span>
-              <span className={styles.statLabel}>Years</span>
+              <span className={styles.statLabel}>years</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statNumber}>60+</span>
-              <span className={styles.statLabel}>Player Interviews</span>
+              <span className={styles.statLabel}>player interviews</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statNumber}>24/7</span>
-              <span className={styles.statLabel}>Tournament Coverage</span>
+              <span className={styles.statLabel}>tournament coverage</span>
             </div>
           </div>
         </div>
@@ -281,7 +286,7 @@ const Side = () => {
 
       {/* Other Side Hustles */}
       <section className={styles.otherHustles}>
-        <h2 className={styles.sectionTitle}>Other Side Ventures</h2>
+        <h2 className={styles.sectionTitle}>other side ventures</h2>
         <div className={styles.hustlesGrid}>
           {sideHustles.slice(1).map((hustle, index) => (
             <div key={index} className={styles.hustleCard}>
@@ -302,13 +307,13 @@ const Side = () => {
 
       {/* Call to Action */}
       <section className={styles.ctaSection}>
-        <h2 className={styles.ctaTitle}>Interested in Working Together?</h2>
+        <h2 className={styles.ctaTitle}>interested in working together?</h2>
         <p className={styles.ctaDescription}>
-          Whether it's web development, event coordination, or media production,
-          I'm always open to new opportunities and exciting projects!
+          whether it's web development, event coordination, or media production,
+          i'm always open to new opportunities and exciting projects!
         </p>
         <a href="/portfolio/contact" className={styles.ctaButton}>
-          Get In Touch
+          get in touch
         </a>
       </section>
     </div>

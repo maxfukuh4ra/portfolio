@@ -7,26 +7,26 @@ const Personal = () => {
 
   const hobbies = [
     {
-      title: "Soccer",
-      description: "My once super serious hobby",
+      title: "soccer",
+      description: "my once super serious hobby",
       icon: "⚽",
       route: "/portfolio/personal/soccer",
     },
     {
-      title: "Dance",
-      description: "Something cool I started in college",
+      title: "dance",
+      description: "something cool i started in college",
       icon: "🕺",
       route: "/portfolio/personal/dance",
     },
     {
-      title: "Media Portfolio",
-      description: "My works revolving flyers and video production",
+      title: "media portfolio",
+      description: "my works revolving flyers and video production",
       icon: "🎥",
       route: "/portfolio/personal/media",
     },
     {
-      title: "Side Hustles",
-      description: "Some random cool things I've done on the side",
+      title: "side hustles",
+      description: "some random cool things i've done on the side",
       icon: "💸",
       route: "/portfolio/personal/side",
     },
@@ -34,9 +34,9 @@ const Personal = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>About Me</h2>
+      <h2 className={styles.title}>about me</h2>
       <p className={styles.subtitle}>
-        Click to see some of my favorite hobbies:
+        click to see some of my favorite hobbies:
       </p>
       <div className={styles.cardContainer}>
         {hobbies.map((hobby, index) => (

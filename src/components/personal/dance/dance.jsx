@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Dance.module.css";
+import { useNavigate } from "react-router-dom";
+import styles from "./dance.module.css";
 import danceData from "../../../data/dance.json";
 
 const DancePage = () => {
+  const navigate = useNavigate();
   const [danceVideos, setDanceVideos] = useState([]);
 
   useEffect(() => {
@@ -11,13 +13,16 @@ const DancePage = () => {
 
   return (
     <div className={styles.dancePageContainer}>
-      <h2 className={styles.sectionTitle}>Competition and Concept Videos</h2>
+      <button className={styles.backButton} onClick={() => navigate("/portfolio/personal")}>
+        ← back
+      </button>
+      <h2 className={styles.sectionTitle}>competition and concept videos</h2>
       <p className={styles.sectionDescription}>
-        After retiring from soccer in college, dance is something that I picked up and now find a passion.
-        From learning my first choreography at Foundations Choreography, I now have experience as a competitive dancer
-        on Samahang Modern as well as a Media Producer on their leadership board. Although I am no longer on Samahang Modern
-        to focus on my studies, I hope to be able to continue dancing in a recreational or once again in a competitive space
-        on one of the many teams in the LA/OC area.
+        after retiring from soccer in college, dance is something that i picked up and now find a passion.
+        from learning my first choreography at foundations choreography, i now have experience as a competitive dancer
+        on samahang modern as well as a media producer on their leadership board. although i am no longer on samahang modern
+        to focus on my studies, i hope to be able to continue dancing in a recreational or once again in a competitive space
+        on one of the many teams in the la/oc area.
       </p>
       <div className={styles.danceContainer}>
         {danceVideos.map((video, index) => (
@@ -36,7 +41,7 @@ const DancePage = () => {
                 rel="noopener noreferrer"
                 className={styles.danceLink}
               >
-                Wide View
+                wide view
               </a>
               <a
                 href={video.frontView}
@@ -44,7 +49,7 @@ const DancePage = () => {
                 rel="noopener noreferrer"
                 className={styles.danceLink}
               >
-                Front View
+                front view
               </a>
             </div>
           </div>

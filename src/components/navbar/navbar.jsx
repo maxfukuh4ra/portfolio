@@ -30,7 +30,7 @@ const Navbar = () => {
                 location.pathname === "/portfolio/" ? styles.active : ""
               }
             >
-              Home
+              home
             </Link>
           </li>
           <li>
@@ -40,7 +40,17 @@ const Navbar = () => {
                 location.pathname === "/portfolio/experience" ? styles.active : ""
               }
             >
-              Experience
+              experience
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/portfolio/background"
+              className={
+                location.pathname === "/portfolio/background" ? styles.active : ""
+              }
+            >
+              background
             </Link>
           </li>
           <li>
@@ -50,17 +60,20 @@ const Navbar = () => {
                 location.pathname === "/portfolio/projects" ? styles.active : ""
               }
             >
-              Projects
+              projects
             </Link>
           </li>
           <li>
             <Link
               to="/portfolio/personal"
               className={
-                location.pathname === "/portfolio/personal" ? styles.active : ""
+                location.pathname === "/portfolio/personal" ||
+                  location.pathname.startsWith("/portfolio/personal/")
+                  ? styles.active
+                  : ""
               }
             >
-              Personal
+              personal
             </Link>
           </li>
           <li>
@@ -70,7 +83,7 @@ const Navbar = () => {
                 location.pathname === "/portfolio/contact" ? styles.active : ""
               }
             >
-              Contact
+              contact
             </Link>
           </li>
         </ul>
