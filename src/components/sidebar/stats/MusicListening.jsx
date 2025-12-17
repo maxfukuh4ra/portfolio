@@ -8,57 +8,12 @@ const MusicListening = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const appleMusicEnabled = sidebarConfig.music.appleMusic?.enabled;
-        const appleMusicEndpoint = sidebarConfig.music.appleMusic?.apiEndpoint;
         const lastfmUsername = sidebarConfig.music.lastfm?.username;
         const lastfmApiKey = sidebarConfig.music.lastfm?.apiKey;
 
-        // Try Apple Music first if enabled
-        if (appleMusicEnabled && appleMusicEndpoint) {
-            const fetchAppleMusic = async () => {
-                try {
-                    const response = await fetch(appleMusicEndpoint);
-
-                    if (!response.ok) {
-                        throw new Error("Failed to fetch Apple Music data");
-                    }
-
-                    const data = await response.json();
-
-                    if (data.attributes) {
-                        // Apple Music API response format
-                        setTrack({
-                            artist: data.attributes.artistName || "Unknown Artist",
-                            name: data.attributes.name || "Unknown Track",
-                            isPlaying: data.attributes.playParams?.isLibrary || false,
-                        });
-                    } else if (data.data?.[0]) {
-                        // Alternative response format
-                        const trackData = data.data[0];
-                        setTrack({
-                            artist: trackData.attributes?.artistName || "Unknown Artist",
-                            name: trackData.attributes?.name || "Unknown Track",
-                            isPlaying: true, // Recent tracks are typically playing
-                        });
-                    } else {
-                        throw new Error("No track data in response");
-                    }
-                } catch (err) {
-                    console.error("Error fetching Apple Music:", err);
-                    setError("Unable to load Apple Music");
-                } finally {
-                    setLoading(false);
-                }
-            };
-
-            fetchAppleMusic();
-            const interval = setInterval(fetchAppleMusic, 30000);
-            return () => clearInterval(interval);
-        }
-        // Fallback to Last.fm if configured
-        else if (lastfmUsername && lastfmApiKey && 
-                 lastfmUsername !== "your-lastfm-username" && 
-                 lastfmApiKey !== "your-lastfm-api-key") {
+        if (lastfmUsername && lastfmApiKey &&
+            lastfmUsername !== "your-lastfm-username" &&
+            lastfmApiKey !== "your-lastfm-api-key") {
             const fetchLastFm = async () => {
                 try {
                     const response = await fetch(
@@ -76,16 +31,32 @@ const MusicListening = () => {
                             ? data.recenttracks.track[0]
                             : data.recenttracks.track;
 
+                        // Get album artwork - Last.fm provides images in different sizes
+                        // We want the largest one (extralarge or large)
+                        const images = recentTrack.image || [];
+                        let albumArt = null;
+
+                        // Try to get extralarge first, then large, then medium
+                        const extralarge = images.find(img => img.size === "extralarge");
+                        const large = images.find(img => img.size === "large");
+                        const medium = images.find(img => img.size === "medium");
+
+                        albumArt = extralarge?.["#text"] || large?.["#text"] || medium?.["#text"] || null;
+
                         if (recentTrack["@attr"]?.nowplaying === "true") {
                             setTrack({
                                 artist: recentTrack.artist["#text"] || recentTrack.artist,
                                 name: recentTrack.name,
+                                album: recentTrack.album?.["#text"] || recentTrack.album || null,
+                                artwork: albumArt,
                                 isPlaying: true,
                             });
                         } else {
                             setTrack({
                                 artist: recentTrack.artist["#text"] || recentTrack.artist,
                                 name: recentTrack.name,
+                                album: recentTrack.album?.["#text"] || recentTrack.album || null,
+                                artwork: albumArt,
                                 isPlaying: false,
                             });
                         }
@@ -120,7 +91,21 @@ const MusicListening = () => {
             ) : track ? (
                 <>
                     <div className={styles.musicInfo}>
-                        {track.isPlaying && (
+                        {track.artwork && (
+                            <div className={styles.albumArtContainer}>
+                                <img
+                                    src={track.artwork}
+                                    alt={`${track.name} by ${track.artist}`}
+                                    className={styles.albumArt}
+                                />
+                                {track.isPlaying && (
+                                    <div className={styles.playingOverlay}>
+                                        <div className={styles.playingIndicator}>▶</div>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        {track.isPlaying && !track.artwork && (
                             <div className={styles.playingIndicator}>▶</div>
                         )}
                         <div className={styles.trackName}>{track.name}</div>
