@@ -61,11 +61,19 @@
 .schoolDetails ul {
   margin-top: 0.5rem;
   padding-left: 1.2rem;
+  list-style-type: disc;
+  display: block;
 }
 
 .schoolDetails li {
+  display: list-item;
   list-style-type: disc;
+  list-style-position: outside;
   margin-bottom: 0.3rem;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .courseworkSection {
@@ -83,11 +91,19 @@
 
 .courseworkSection ul {
   padding-left: 1.2rem;
+  list-style-type: disc;
+  display: block;
 }
 
 .courseworkSection li {
-  list-style: disc;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
   margin-bottom: 0.3rem;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .involvementsSection {

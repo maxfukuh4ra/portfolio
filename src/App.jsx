@@ -10,13 +10,13 @@ import styles from "./App.module.css";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import CurrentlySection from "./components/about/currently/currently";
-import SkillsSection from "./components/about/skills/skills";
 import About from "./components/about/about";
 import ProjectsPage from "./pages/projects/projects";
 import Experience from "./pages/experience/experience";
 import Background from "./pages/background/background";
 import Contact from "./pages/contact/contact";
 import Resume from "./pages/resume/resume";
+import Skills from "./pages/skills/skills";
 import Footer from "./components/footer/footer";
 
 import Personal from "./components/personal/personal";
@@ -47,10 +47,10 @@ function App() {
               }
             />
             <Route path="/portfolio/currently" element={<CurrentlySection />} />
-            <Route path="/portfolio/skills" element={<SkillsSection />} />
             <Route path="/portfolio/experience" element={<Experience />} />
             <Route path="/portfolio/background" element={<Background />} />
             <Route path="/portfolio/projects" element={<ProjectsPage />} />
+            <Route path="/portfolio/skills" element={<Skills />} />
             <Route path="/portfolio/personal" element={<Personal />} />
             <Route path="/portfolio/resume" element={<Resume />} />
             <Route path="/portfolio/contact" element={<Contact />} />

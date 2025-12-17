@@ -1,0 +1,145 @@
+@import "../../vars.css";
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: lowercase;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-medium-grey);
+    text-transform: lowercase;
+    line-height: 1.6;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--grey-border);
+}
+
+.categoryButton {
+    background: transparent;
+    border: 1px solid var(--grey-border);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+    text-transform: lowercase;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.categoryButton:hover {
+    background: var(--blue-light);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.categoryButton.active {
+    background: #ff6b35;
+    border-color: #ff6b35;
+    color: var(--white);
+}
+
+.categoryButton.active:hover {
+    background: #e55a2b;
+    border-color: #e55a2b;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.skillItem:hover {
+    transform: translateY(-4px);
+}
+
+.skillLogo {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+}
+
+.skillName {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ff6b35;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.noSkills {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-medium-grey);
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .categories {
+        gap: 0.5rem;
+    }
+
+    .categoryButton {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .skillsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .skillLogo {
+        width: 3rem;
+        height: 3rem;
+    }
+}

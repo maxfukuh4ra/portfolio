@@ -1,58 +1,204 @@
 [
   {
     "title": "Python",
-    "imageSrc": "skills/python.png"
+    "imageSrc": "skills/python.png",
+    "categories": [
+      "languages",
+      "ml & data"
+    ]
   },
   {
     "title": "C++",
-    "imageSrc": "skills/c++.png"
+    "imageSrc": "skills/c++.png",
+    "categories": [
+      "languages"
+    ]
   },
   {
     "title": "Javascript",
-    "imageSrc": "skills/javascript.png"
+    "imageSrc": "skills/javascript.png",
+    "categories": [
+      "languages",
+      "web & database"
+    ]
   },
   {
-    "title": "HTML/CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
-    "title": "Bash",
-    "imageSrc": "skills/bash.png"
-  },
-  {
-    "title": "React",
-    "imageSrc": "skills/react.png"
-  },
-  {
-    "title": "Node.js",
-    "imageSrc": "skills/node.png"
-  },
-  {
-    "title": "Firebase",
-    "imageSrc": "skills/firebase.png"
-  },
-  {
-    "title": "AWS",
-    "imageSrc": "skills/aws.png"
-  },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
-    "title": "Prem Pro",
-    "imageSrc": "skills/premierepro.png"
-  },
-  {
-    "title": "Illustrator",
-    "imageSrc": "skills/illustrator.png"
-  },
-  {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.png",
+    "categories": [
+      "languages",
+      "web & database"
+    ]
   },
   {
     "title": "SQL",
-    "imageSrc": "skills/sql.png"
+    "imageSrc": "skills/sql.png",
+    "categories": [
+      "web & database"
+    ]
+  },
+  {
+    "title": "HTML5",
+    "imageSrc": "skills/html.png",
+    "categories": [
+      "web & database"
+    ]
+  },
+  {
+    "title": "CSS3",
+    "imageSrc": "skills/css.png",
+    "categories": [
+      "web & database"
+    ]
+  },
+  {
+    "title": "Bash",
+    "imageSrc": "skills/bash.png",
+    "categories": [
+      "languages",
+      "devops"
+    ]
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgresql.png",
+    "categories": [
+      "web & database"
+    ]
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png",
+    "categories": [
+      "web & database"
+    ]
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png",
+    "categories": [
+      "web & database"
+    ]
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png",
+    "categories": [
+      "frameworks"
+    ]
+  },
+  {
+    "title": "Next.js",
+    "imageSrc": "skills/nextjs.png",
+    "categories": [
+      "frameworks"
+    ]
+  },
+  {
+    "title": "Node.js",
+    "imageSrc": "skills/node.png",
+    "categories": [
+      "frameworks"
+    ]
+  },
+  {
+    "title": "Express.js",
+    "imageSrc": "skills/expressjs.png",
+    "categories": [
+      "frameworks"
+    ]
+  },
+  {
+    "title": "Django",
+    "imageSrc": "skills/django.png",
+    "categories": [
+      "frameworks"
+    ]
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker.png",
+    "categories": [
+      "technologies",
+      "devops"
+    ]
+  },
+  {
+    "title": "Kubernetes",
+    "imageSrc": "skills/kubernetes.png",
+    "categories": [
+      "technologies",
+      "devops"
+    ]
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png",
+    "categories": [
+      "technologies"
+    ]
+  },
+  {
+    "title": "Selenium",
+    "imageSrc": "skills/selenium.png",
+    "categories": [
+      "technologies"
+    ]
+  },
+  {
+    "title": "AWS EC2, Lambda, S3",
+    "imageSrc": "skills/aws.png",
+    "categories": [
+      "devops"
+    ]
+  },
+  {
+    "title": "DigitalOcean",
+    "imageSrc": "skills/digitalocean.png",
+    "categories": [
+      "devops"
+    ]
+  },
+  {
+    "title": "NumPy",
+    "imageSrc": "skills/numpy.png",
+    "categories": [
+      "ml & data"
+    ]
+  },
+  {
+    "title": "Pandas",
+    "imageSrc": "skills/pandas.png",
+    "categories": [
+      "ml & data"
+    ]
+  },
+  {
+    "title": "PyTorch",
+    "imageSrc": "skills/pytorch.png",
+    "categories": [
+      "ml & data"
+    ]
+  },
+  {
+    "title": "Scikit-learn",
+    "imageSrc": "skills/scikitlearn.png",
+    "categories": [
+      "ml & data"
+    ]
+  },
+  {
+    "title": "Matplotlib",
+    "imageSrc": "skills/matplotlib.png",
+    "categories": [
+      "ml & data"
+    ]
+  },
+  {
+    "title": "Seaborn",
+    "imageSrc": "skills/seaborn.png",
+    "categories": [
+      "ml & data"
+    ]
   }
 ]

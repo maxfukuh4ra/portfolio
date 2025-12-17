@@ -65,16 +65,6 @@
     "imageSrc": "work/db.png"
   },
   {
-    "role": "Coordinator",
-    "organisation": "US Open",
-    "location": "New York, NY",
-    "startDate": "Aug. 2023",
-    "endDate": "Sept. 2024",
-    "link": "https://www.usopen.org/",
-    "experiences": [],
-    "imageSrc": "work/usopen.svg"
-  },
-  {
     "role": "Product Management Intern",
     "organisation": "SkyDrive",
     "location": "Tokyo, JP",
